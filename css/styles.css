@@ -1,0 +1,383 @@
+:root {
+  font-size: 16px; }
+
+h2 {
+  font-family: 'Francois One';
+  text-transform: uppercase; }
+
+a {
+  text-transform: uppercase;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+
+body {
+  position: relative;
+  padding-top: 200px;
+  padding-bottom: 150px;
+  background-color: #F7F7F7; }
+
+h1 {
+  font-size: 5.3rem; }
+
+h2 {
+  font-size: 2.65rem; }
+
+h3 {
+  font-size: 1.76667rem; }
+
+h4 {
+  font-size: 1.325rem; }
+
+h5 {
+  font-size: 1.06rem; }
+
+h6 {
+  font-size: 0.88333rem; }
+
+.container {
+  margin: auto; }
+
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+  padding-left: .5rem;
+  color: rgba(0, 0, 0, 0.9);
+  border-radius: 15px; }
+
+/* HEADER*/
+.bgColor {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  color: black; }
+  .bgColor.color-violeta {
+    background-color: #6A67CE; }
+  .bgColor.color-violeta-claro {
+    background-color: #CECCFF; }
+  .bgColor.color-verde {
+    background-color: #2ABFCA; }
+
+.navbar .navbar-nav {
+  list-style: none; }
+  .navbar .navbar-nav .nav-link {
+    padding: 10px;
+    border-radius: 15px;
+    color: white; }
+    .navbar .navbar-nav .nav-link.color-violeta {
+      background-color: #6A67CE; }
+    .navbar .navbar-nav .nav-link:hover {
+      color: white;
+      border-color: #2ABFCA;
+      background-color: #2ABFCA; }
+    .navbar .navbar-nav .nav-link.color-violeta-claro {
+      background-color: #CECCFF; }
+    .navbar .navbar-nav .nav-link:hover {
+      color: white;
+      border-color: #2ABFCA;
+      background-color: #2ABFCA; }
+    .navbar .navbar-nav .nav-link.color-verde {
+      background-color: #2ABFCA; }
+    .navbar .navbar-nav .nav-link:hover {
+      color: white;
+      border-color: #2ABFCA;
+      background-color: #2ABFCA; }
+
+.btn {
+  border-radius: 15rem;
+  border: 2px solid; }
+
+.form-control {
+  border-radius: 15rem; }
+
+.btn-outline-success {
+  border-color: #2ABFCA;
+  color: #2ABFCA; }
+  .btn-outline-success.color-violeta {
+    background-color: #6A67CE; }
+  .btn-outline-success:hover {
+    color: #6A67CE;
+    border-color: #2ABFCA;
+    background-color: #2ABFCA; }
+  .btn-outline-success.color-violeta-claro {
+    background-color: #CECCFF; }
+  .btn-outline-success:hover {
+    color: #6A67CE;
+    border-color: #2ABFCA;
+    background-color: #2ABFCA; }
+  .btn-outline-success.color-verde {
+    background-color: #2ABFCA; }
+  .btn-outline-success:hover {
+    color: #6A67CE;
+    border-color: #2ABFCA;
+    background-color: #2ABFCA; }
+
+.dropdown-menu {
+  background-color: white; }
+
+.dropdown-item {
+  background-color: white; }
+  .dropdown-item:hover {
+    background-color: #2ABFCA; }
+
+/*CARUSEL*/
+.carousel-inner {
+  width: 90%;
+  margin: auto; }
+
+/* SERVICIOS*/
+.iconCombo {
+  font-size: 45px;
+  padding-bottom: 5px;
+  text-align: center; }
+
+.col-sm p {
+  text-align: center; }
+
+.col-sm h3 {
+  text-align: center; }
+
+.tituloCombos {
+  padding: 50px;
+  align-items: center;
+  text-align: center; }
+
+/*NOSOTROS*/
+.botonIzquierda {
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 0;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 15px; }
+  .botonIzquierda:hover {
+    color: white; }
+  .botonIzquierda p {
+    margin-bottom: 10px; }
+
+/* COMBOS*/
+.card.color-violeta {
+  border: 1px solid #6A67CE;
+  background-color: #f6f6fc; }
+
+.card.color-violeta-claro {
+  border: 1px solid #CECCFF;
+  background-color: white; }
+
+.card.color-verde {
+  border: 1px solid #2ABFCA;
+  background-color: #bfeef2; }
+
+.card .serviciosCombosTitle {
+  font-weight: bold; }
+
+/* FOOTER*/
+.blockquote {
+  background-color: #6A67CE;
+  width: 100%;
+  height: 80px;
+  color: #E6E7E8;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 30px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0px; }
+
+.nosotrosTitulo {
+  margin-top: 3rem;
+  text-align: center; }
+
+.redesNosotros {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 2rem; }
+  .redesNosotros a.color-violeta {
+    color: #6A67CE; }
+    .redesNosotros a.color-violeta:hover {
+      color: #2f2c89; }
+  .redesNosotros a.color-violeta-claro {
+    color: #CECCFF; }
+    .redesNosotros a.color-violeta-claro:hover {
+      color: #544dff; }
+  .redesNosotros a.color-verde {
+    color: #2ABFCA; }
+    .redesNosotros a.color-verde:hover {
+      color: #145b60; }
+
+.galeria {
+  padding: 15px; }
+  .galeria:hover {
+    opacity: 0.6; }
+
+.row-cols-md-3 .modal {
+  right: auto;
+  left: auto;
+  top: auto;
+  bottom: auto;
+  width: 100%; }
+  .row-cols-md-3 .modal .modal-dialog {
+    margin: 0; }
+
+.containerForm {
+  background-color: #E6E7E8;
+  display: block;
+  margin: auto;
+  padding: 20px;
+  border: 15px solid #6A67CE;
+  border-radius: 15px;
+  box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 600px; }
+  .containerForm .flexFormContacto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .containerForm .flexFormContacto p {
+      margin-bottom: 5px; }
+    .containerForm .flexFormContacto input {
+      border-radius: 15px;
+      padding: 5px;
+      border: 2px solid #6A67CE;
+      background-color: white; }
+    .containerForm .flexFormContacto input:focus {
+      outline: 0;
+      border: 2px solid #6A67CE;
+      background-color: #2ABFCA;
+      color: white; }
+  .containerForm .nombreForm {
+    background-color: rgba(106, 103, 206, 0.3);
+    margin-bottom: 10px;
+    margin-right: 5px;
+    border-radius: 15px;
+    padding: 10px; }
+  .containerForm .emailForm {
+    background-color: rgba(106, 103, 206, 0.3);
+    margin-bottom: 10px;
+    margin-right: 5px;
+    border-radius: 15px;
+    padding: 10px; }
+  .containerForm .telefonoForm {
+    background-color: rgba(106, 103, 206, 0.3);
+    margin-bottom: 10px;
+    margin-right: 5px;
+    border-radius: 15px;
+    padding: 10px; }
+  .containerForm .estadoCivilForm {
+    background-color: rgba(106, 103, 206, 0.3);
+    margin-bottom: 10px;
+    margin-right: 5px;
+    border-radius: 15px;
+    padding: 10px;
+    max-width: 300px; }
+    .containerForm .estadoCivilForm select {
+      border-radius: 15px;
+      padding: 5px;
+      border: none; }
+  .containerForm .textareaForm {
+    background-color: rgba(106, 103, 206, 0.3);
+    margin-bottom: 10px;
+    margin-right: 5px;
+    border-radius: 15px;
+    padding: 10px; }
+    .containerForm .textareaForm textarea {
+      border-radius: 15px;
+      padding: 2px;
+      border: none; }
+  .containerForm .terminosYcondiciones {
+    padding-top: 15px; }
+  .containerForm .limpiarFormulario {
+    padding: 6px;
+    background-color: #E6E7E8;
+    color: #6A67CE;
+    border: 2px solid #6A67CE;
+    cursor: pointer;
+    border-radius: 150px;
+    font-size: 12px;
+    text-transform: uppercase; }
+    .containerForm .limpiarFormulario:hover {
+      background-color: #2ABFCA;
+      border: 2px solid #2ABFCA;
+      color: white; }
+  .containerForm .enviarFormulario {
+    padding: 6px;
+    background-color: #E6E7E8;
+    color: #6A67CE;
+    border: 2px solid #6A67CE;
+    cursor: pointer;
+    border-radius: 150px;
+    font-size: 12px;
+    text-transform: uppercase; }
+    .containerForm .enviarFormulario:hover {
+      background-color: #2ABFCA;
+      border: 2px solid #2ABFCA;
+      color: white; }
+
+/*---------------SERVICIOS----------------*/
+.servicios {
+  display: flex;
+  flex-direction: row;
+  padding: 50px;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .servicios .serviciosItem {
+    display: flex;
+    flex-direction: row;
+    padding: 20px; }
+    .servicios .serviciosItem .servicioI {
+      border-right: 3px solid #6A67CE;
+      height: 265px; }
+      .servicios .serviciosItem .servicioI .servicioIcon {
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        margin: auto;
+        justify-content: center;
+        width: 55px;
+        font-size: 40px; }
+  .servicios div ul {
+    list-style: none; }
+
+/*----------------RESPONSIVE----------------*/
+@media (min-width: 576px) and (max-width: 1200px) {
+  .nosotrosIndex {
+    flex-direction: column;
+    max-width: 100%; }
+  .serviciosContainer {
+    flex-direction: column;
+    max-width: 100%; }
+  .nosotrosIndexTexto {
+    max-width: 100%;
+    margin-top: 1rem; }
+  .col-md-8 {
+    flex: 0 0 100%;
+    max-width: 100%; }
+  .nosotrosIndexImagen {
+    max-width: 100%;
+    flex-direction: column; }
+  .servicios {
+    flex-direction: column;
+    max-width: 100%;
+    align-items: center; } }
+
+@media (max-width: 767px) {
+  .card-deck {
+    flex-direction: column; }
+    .card-deck .card {
+      margin-bottom: 1rem; }
+  .comboIndex {
+    flex-direction: column; }
+    .comboIndex .col-sm-4 {
+      max-width: 100%; }
+  .serviciosContainer {
+    flex-direction: column;
+    max-width: 100%; }
+  .servicios {
+    flex-direction: column;
+    max-width: 100%;
+    align-items: center; } }
