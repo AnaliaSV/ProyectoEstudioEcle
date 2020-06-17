@@ -1,0 +1,419 @@
+:root { 
+    font-size: 16px;
+}
+
+h2 {
+    font-family: 'Francois One';
+    text-transform: uppercase;
+}
+
+a {
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &:hover {
+    text-decoration: none;
+    }
+}
+$verde:#2ABFCA;
+$violeta:#6A67CE;
+$violeta-claro:#CECCFF;
+$gris-claro:#F7F7F7;
+$marginB:10px;
+$marginR:5px;
+$borderR:15px;
+$padding:10px;
+$paddingBtn:6px;
+$bgc:#E6E7E8;
+$border:2px solid #6A67CE;
+$colors: (
+violeta: #6A67CE,
+violeta-claro:#CECCFF,
+verde:#2ABFCA);
+
+@mixin oscuridad($color) {
+    border: 1px solid $color;
+    background-color: lighten($color, 37%);
+}
+@mixin sizes($marginB,$marginR, $borderR,$padding) {
+   margin-bottom:$marginB;
+   margin-right: $marginR;
+   border-radius: $borderR;
+   padding: $padding;
+}
+@mixin BotonForm ($paddingBtn, $bgc,$violeta,$border) {
+    padding:$paddingBtn;
+    background-color:$bgc;
+    color:$violeta;
+    border: $border;}
+body {
+    position: relative;
+    padding-top: 200px;
+    padding-bottom: 150px;
+    background-color:$gris-claro;
+}
+@for $i from 1 through 6 {
+    h#{$i} {font-size: 5.3rem/$i;}
+}
+.container {
+    margin:auto;}
+
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+    padding-left: .5rem;
+    color: rgba(0, 0, 0, 0.9);
+    border-radius: 15px; 
+}
+//----------------------INDEX----------------------//
+/* HEADER*/
+.bgColor {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index:1;
+    width:100%;
+    color:black;
+    @each $name, $color in $colors {
+        &.color-#{$name} {background-color:($color);
+        }
+    }
+}
+.navbar{
+    .navbar-nav{
+        list-style: none;
+        .nav-link { 
+            padding:10px;
+            border-radius: 15px;
+            color: white;
+            @each $name, $color in $colors {
+                &.color-#{$name} {background-color:($color);}
+                &:hover {
+                    color: white;
+                    border-color: $verde;
+                    background-color: $verde; }
+            }
+        }   
+    }    
+}
+.btn {
+    border-radius: 15rem;
+    border: 2px solid; }
+
+.form-control {
+    border-radius: 15rem; 
+} 
+.btn-outline-success {
+      border-color: $verde;
+      color: $verde;
+    @each $name, $color in $colors {
+        &.color-#{$name} {background-color:($color);}        
+        &:hover {
+        color:$violeta ;    
+        border-color: $verde;
+        background-color: $verde; }
+    }
+}
+.dropdown-menu {
+    background-color:white;
+}
+
+.dropdown-item {
+    background-color:white;
+    &:hover {
+    background-color:$verde;    
+    }
+}
+/*CARUSEL*/
+.carousel-inner {
+    width: 90%;
+    margin: auto; 
+}
+/* SERVICIOS*/
+.iconCombo {
+    font-size: 45px;
+    padding-bottom: 5px;
+    text-align: center; }
+  
+  .col-sm {
+    p {
+        text-align: center;}
+  
+    h3 {
+    text-align: center; }
+}
+.tituloCombos {
+    padding: 50px;
+    align-items: center;
+    text-align: center;
+}
+/*NOSOTROS*/
+
+.botonIzquierda {
+    text-transform: uppercase;
+	padding-top: 10px;
+	padding-bottom:0;
+	padding-right:20px; 
+	padding-left:20px;
+	border-radius:15px;
+	cursor: pointer;
+    font-size: 15px;
+    &:hover {
+    color:white;}
+    p {
+        margin-bottom:10px ;
+    }
+}
+/* COMBOS*/
+.card {
+     @each $name, $color in $colors {
+        &.color-#{$name} {
+        @include oscuridad($color);}        
+    }
+    .serviciosCombosTitle {
+        font-weight: bold;
+    }
+}
+/* FOOTER*/
+
+.blockquote {
+    background-color: $violeta;
+	width: 100%;
+	height: 80px;
+	color:#E6E7E8;
+	text-transform: uppercase;	
+	text-align: center;
+	padding: 30px;
+	position: absolute;
+	left:0;
+	right: 0;
+    bottom: 0;
+    margin:0px;
+}
+//----------------------NOSOTROS----------------------//
+.nosotrosTitulo {  
+    margin-top: 3rem;
+    text-align: center;
+
+} 
+.redesNosotros {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    font-size: 2rem;
+   
+   a { 
+        @each $name, $color in $colors {
+            &.color-#{$name} {color:$color;       
+                &:hover {
+                   color: darken($color, 25%);
+            }
+            }
+        }
+    }
+
+}
+//----------------------PORTFOLIO----------------------//
+
+.galeria {
+    padding: 15px;
+     &:hover {
+    opacity: 0.6;}
+}
+
+.row-cols-md-3 {
+
+    .modal {
+        right: auto;
+        left: auto;
+        top: auto;
+        bottom:auto;
+        .modal-dialog {
+            margin:0;
+        }
+        width: 100%;
+    } 
+}
+//----------------------CONTACTO----------------------//
+    .containerForm {
+        background-color:#E6E7E8;
+        display: block;
+        margin: auto;	
+        padding: 20px;
+        border: 15px solid $violeta;
+        border-radius:$borderR;
+        box-shadow: 4px 4px 8px 0 rgba(0,0,0,.2);
+        max-width: 600px;
+       .flexFormContacto {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        p {
+            margin-bottom: 5px;
+        }
+        input {
+            border-radius: $borderR;
+            padding: 5px;
+            border: 2px solid $violeta;
+            background-color:white;
+        }
+           
+        input:focus {
+            outline:0;
+            border:2px solid $violeta;
+            background-color: $verde;
+            color: white;
+        }
+}
+  .nombreForm {
+        background-color: rgba(106, 103, 206, 0.3);	
+        @include sizes($marginB,$marginR, $borderR, $padding);
+    }
+    .emailForm {
+        background-color: rgba(106, 103, 206, 0.3);
+        @include sizes($marginB,$marginR, $borderR, $padding);
+    }
+
+    .telefonoForm {
+        background-color: rgba(106, 103, 206, 0.3);
+        @include sizes($marginB,$marginR, $borderR, $padding);
+    }
+    .estadoCivilForm {
+        background-color: rgba(106, 103, 206, 0.3);	
+        @include sizes($marginB,$marginR, $borderR, $padding);
+        max-width: 300px;
+        select {
+            border-radius: $borderR;
+            padding: 5px;
+            border: none;
+        }
+   }
+    .textareaForm {
+        background-color: rgba(106, 103, 206, 0.3);	
+        @include sizes($marginB,$marginR, $borderR, $padding);
+            textarea {
+                border-radius: $borderR;
+                padding: 2px;
+                border:none;
+            }
+    }
+    .terminosYcondiciones {
+        padding-top:15px;
+    }
+
+    .limpiarFormulario {
+        @include BotonForm ($paddingBtn, $bgc,$violeta,$border);
+        cursor: pointer;
+        border-radius: 150px;
+        font-size: 12px;
+        text-transform: uppercase;
+        
+        &:hover {
+        background-color: $verde; 
+        border: 2px solid $verde;
+        color:white;
+        }
+} 
+    .enviarFormulario {
+        @include BotonForm ($paddingBtn, $bgc,$violeta,$border);
+        cursor: pointer;
+        border-radius: 150px;
+        font-size: 12px;
+        text-transform: uppercase;
+        
+        &:hover {
+        background-color: $verde; 
+        border: 2px solid $verde;
+        color:white;
+       }
+    }
+}
+/*---------------SERVICIOS----------------*/
+.servicios {
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    .serviciosItem {
+        display:flex;
+        flex-direction: row;
+        padding: 20px;
+        .servicioI {
+            border-right: 3px solid $violeta;
+            height: 265px;
+            .servicioIcon {
+                display: flex;
+                flex-direction: column;
+                height: 200px;
+                margin: auto;
+                justify-content: center;
+                width: 55px;
+                font-size: 40px;
+            }
+        }
+    }
+    div {
+        ul {
+            list-style: none;
+        }  
+    } 
+}
+/*----------------RESPONSIVE----------------*/
+@media (min-width: 576px) and (max-width:1200px) {
+    .nosotrosIndex {
+         flex-direction: column;
+         max-width: 100%;                
+    }
+
+     .serviciosContainer {
+            flex-direction: column;
+            max-width: 100%;    
+   }
+
+     .nosotrosIndexTexto {
+         max-width: 100%;
+         margin-top: 1rem;
+     }
+     .col-md-8 {
+         flex: 0 0 100%;
+         max-width: 100%;
+     }
+ 
+     .nosotrosIndexImagen {
+         max-width: 100%;
+         flex-direction: column;
+     }
+     .servicios {
+        flex-direction: column;
+        max-width: 100%;   
+        align-items: center;
+     }
+ }
+ @media (max-width:767px) {
+     .card-deck { 
+         flex-direction: column; 
+         .card {
+             margin-bottom: 1rem;
+         }    
+     }
+     .comboIndex {
+         flex-direction: column; 
+         .col-sm-4 {
+             max-width: 100%;
+         }
+     }
+     .serviciosContainer {
+        flex-direction: column;
+        max-width: 100%;    
+    }
+    .servicios {
+        flex-direction: column;
+        max-width: 100%;  
+        align-items: center; 
+    }
+}
+ 
+
+
