@@ -13,8 +13,8 @@ a {
 
 body {
   position: relative;
-  /*  padding-top: 200px;*/
-  padding-bottom: 150px;
+  padding-bottom: 200px;
+  padding-top: 200px;
   background-color: #F7F7F7; }
 
 h1 {
@@ -45,7 +45,7 @@ h6 {
 
 /* HEADER*/
 .bgColor {
-  /*    position: fixed;*/
+  position: fixed;
   right: 0;
   left: 0;
   top: 0;
