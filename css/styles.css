@@ -79,7 +79,8 @@ h6 {
       background-color: #2ABFCA; }
     .navbar .navbar-nav .nav-link.color-verde {
       background-color: #2ABFCA; }
-    .navbar .navbar-nav .nav-link:hover {
+    .navbar .navbar-nav .nav-link:hover, 
+    .navbar .navbar-nav .nav-link[aria-expanded="true"] {
       color: white;
       border-color: #2ABFCA;
       background-color: #2ABFCA; }

@@ -78,7 +78,7 @@ body {
         }
     }
 }
-.navbar{
+.navbar {
     .navbar-nav{
         list-style: none;
         .nav-link { 
@@ -86,11 +86,14 @@ body {
             border-radius: 15px;
             color: white;
             @each $name, $color in $colors {
-                &.color-#{$name} {background-color:($color);}
-                &:hover {
+                &.color-#{$name} {
+                    background-color:($color);
+                }
+                    &:hover {
                     color: white;
                     border-color: $verde;
-                    background-color: $verde; }
+                    background-color: $verde; 
+                   }
             }
         }   
     }    
