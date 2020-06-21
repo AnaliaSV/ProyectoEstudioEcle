@@ -1,0 +1,49 @@
+/*INDEX*/
+/*carrousel*/
+.carousel-inner {
+    width: 90%;
+    margin: auto; 
+}
+/* servicios*/
+.iconCombo {
+    font-size: 45px;
+    padding-bottom: 5px;
+    text-align: center; 
+}
+.col-sm {
+    p {
+        text-align: center;}
+    h3 {
+    text-align: center; }
+}
+.tituloCombos {
+    padding: 50px;
+    align-items: center;
+    text-align: center;
+}
+/*nosotros*/
+.botonIzquierda {
+    text-transform: uppercase;
+	padding-top: 10px;
+	padding-bottom:0;
+	padding-right:20px; 
+	padding-left:20px;
+	border-radius:15px;
+	cursor: pointer;
+    font-size: 15px;
+    &:hover {
+    color:white;}
+    p {
+        margin-bottom:10px ;
+    }
+}
+/*combos*/
+.card {
+     @each $name, $color in $colors {
+        &.color-#{$name} {
+        @include oscuridad($color);}        
+    }
+    .serviciosCombosTitle {
+        font-weight: bold;
+    }
+}

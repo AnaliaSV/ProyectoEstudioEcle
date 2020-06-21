@@ -1,0 +1,95 @@
+/*CONTACTO*/
+.containerForm {
+    background-color:#E6E7E8;
+    display: block;
+    margin: auto;	
+    padding: 20px;
+    border: 15px solid $violeta;
+    border-radius:$borderR;
+    box-shadow: 4px 4px 8px 0 rgba(0,0,0,.2);
+    max-width: 600px;
+   .flexFormContacto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    p {
+        margin-bottom: 5px;
+    }
+    input {
+        border-radius: $borderR;
+        padding: 5px;
+        border: 2px solid $violeta;
+        background-color:white;
+    }
+       
+    input:focus {
+        outline:0;
+        border:2px solid $violeta;
+        background-color: $verde;
+        color: white;
+    }
+}
+.nombreForm {
+    background-color: rgba(106, 103, 206, 0.3);	
+    @include sizes($marginB,$marginR, $borderR, $padding);
+}
+.emailForm {
+    background-color: rgba(106, 103, 206, 0.3);
+    @include sizes($marginB,$marginR, $borderR, $padding);
+}
+
+.telefonoForm {
+    background-color: rgba(106, 103, 206, 0.3);
+    @include sizes($marginB,$marginR, $borderR, $padding);
+}
+.estadoCivilForm {
+    background-color: rgba(106, 103, 206, 0.3);	
+    @include sizes($marginB,$marginR, $borderR, $padding);
+    max-width: 300px;
+    select {
+        border-radius: $borderR;
+        padding: 5px;
+        border: none;
+    }
+}
+.textareaForm {
+    background-color: rgba(106, 103, 206, 0.3);	
+    @include sizes($marginB,$marginR, $borderR, $padding);
+        textarea {
+            border-radius: $borderR;
+            padding: 2px;
+            border:none;
+        }
+}
+.terminosYcondiciones {
+    padding-top:15px;
+}
+
+.limpiarFormulario {
+    @include BotonForm ($paddingBtn, $bgc,$violeta,$border);
+    cursor: pointer;
+    border-radius: 150px;
+    font-size: 12px;
+    text-transform: uppercase;
+    
+    &:hover {
+    background-color: $verde; 
+    border: 2px solid $verde;
+    color:white;
+    }
+} 
+.enviarFormulario {
+    @include BotonForm ($paddingBtn, $bgc,$violeta,$border);
+    cursor: pointer;
+    border-radius: 150px;
+    font-size: 12px;
+    text-transform: uppercase;
+    
+    &:hover {
+    background-color: $verde; 
+    border: 2px solid $verde;
+    color:white;
+   }
+}
+}

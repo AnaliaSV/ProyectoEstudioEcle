@@ -1,0 +1,62 @@
+/* HEADER*/
+.bgColor {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index:1;
+    width:100%;
+    color:black;
+    @each $name, $color in $colors {
+        &.color-#{$name} {background-color:($color);
+        }
+    }
+}
+.navbar {
+    .navbar-nav{
+        list-style: none;
+        .nav-link { 
+            padding:10px;
+            border-radius: 15px;
+            color: white;
+            @each $name, $color in $colors {
+                &.color-#{$name} {
+                    background-color:($color);
+                }
+                    &:hover {
+                    color: white;
+                    border-color: $verde;
+                    background-color: $verde; 
+                   }
+            }
+        }   
+    }    
+}
+.btn {
+    border-radius: 15rem;
+    border: 2px solid; }
+
+.form-control {
+    border-radius: 15rem; 
+} 
+.btn-outline-success {
+      border-color: $verde;
+      color: $verde;
+    @each $name, $color in $colors {
+        &.color-#{$name} {background-color:($color);}        
+        &:hover {
+        color:$violeta ;    
+        border-color: $verde;
+        background-color: $verde; }
+    }
+}
+.dropdown-menu {
+    background-color:white;
+}
+
+.dropdown-item {
+    background-color:white;
+    &:hover {
+    background-color:$verde;    
+    }
+}

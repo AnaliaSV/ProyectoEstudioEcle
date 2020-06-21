@@ -1,0 +1,33 @@
+/*SERVICIOS*/
+.servicios {
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    .serviciosItem {
+        display:flex;
+        flex-direction: row;
+        padding: 20px;
+        .servicioI {
+            border-right: 3px solid $violeta;
+            height: 265px;
+            .servicioIcon {
+                display: flex;
+                flex-direction: column;
+                height: 200px;
+                margin: auto;
+                justify-content: center;
+                width: 55px;
+                font-size: 40px;
+            }
+        }
+    }
+    div {
+        ul {
+            list-style: none;
+        }  
+    } 
+}
+/*combos .card en index, linea 164*/
+

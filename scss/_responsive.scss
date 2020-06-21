@@ -1,0 +1,52 @@
+/*RESPONSIVE*/
+@media (min-width: 576px) and (max-width:1200px) {
+    .nosotrosIndex {
+         flex-direction: column;
+         max-width: 100%;                
+    }
+    .serviciosContainer {
+            flex-direction: column;
+            max-width: 100%;    
+    }
+    .nosotrosIndexTexto {
+         max-width: 100%;
+         margin-top: 1rem;
+    }
+     .col-md-8 {
+         flex: 0 0 100%;
+         max-width: 100%;
+    }
+    .nosotrosIndexImagen {
+         max-width: 100%;
+         flex-direction: column;
+    }
+    .servicios {
+        flex-direction: column;
+        max-width: 100%;   
+        align-items: center;
+    }
+}
+ @media (max-width:767px) {
+    .card-deck { 
+        flex-direction: column; 
+        .card {
+            margin-bottom: 1rem;
+         }    
+    }
+    .comboIndex {
+        flex-direction: column; 
+        .col-sm-4 {
+            max-width: 100%;
+         }
+    }
+    .serviciosContainer {
+        flex-direction: column;
+        max-width: 100%;    
+    }
+    .servicios {
+        flex-direction: column;
+        max-width: 100%;  
+        align-items: center; 
+    }
+}
+ 

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   font-size: 16px; }
 
@@ -121,12 +122,14 @@ h6 {
   .dropdown-item:hover {
     background-color: #2ABFCA; }
 
-/*CARUSEL*/
+/* PÁGINAS */
+/*INDEX*/
+/*carrousel*/
 .carousel-inner {
   width: 90%;
   margin: auto; }
 
-/* SERVICIOS*/
+/* servicios*/
 .iconCombo {
   font-size: 45px;
   padding-bottom: 5px;
@@ -143,7 +146,7 @@ h6 {
   align-items: center;
   text-align: center; }
 
-/*NOSOTROS*/
+/*nosotros*/
 .botonIzquierda {
   text-transform: uppercase;
   padding-top: 10px;
@@ -158,7 +161,7 @@ h6 {
   .botonIzquierda p {
     margin-bottom: 10px; }
 
-/* COMBOS*/
+/*combos*/
 .card.color-violeta {
   border: 1px solid #6A67CE;
   background-color: #f6f6fc; }
@@ -173,21 +176,6 @@ h6 {
 
 .card .serviciosCombosTitle {
   font-weight: bold; }
-
-/* FOOTER*/
-.blockquote {
-  background-color: #6A67CE;
-  width: 100%;
-  height: 80px;
-  color: #E6E7E8;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 30px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: 0px; }
 
 .nosotrosTitulo {
   margin-top: 3rem;
@@ -211,16 +199,13 @@ h6 {
     .redesNosotros a.color-verde:hover {
       color: #145b60; }
 
+/*PORTFOLIO*/
 .galeria {
   padding: 15px; }
   .galeria:hover {
     opacity: 0.6; }
 
 .row-cols-md-3 .modal {
-  /* right: auto;
-        left: auto;
-        top: auto;
-        bottom:auto;*/
   width: 100%;
   height: 100%; }
   .row-cols-md-3 .modal .modal-dialog {
@@ -229,6 +214,7 @@ h6 {
 .row-cols-md-3 > * {
   max-width: 100%; }
 
+/*CONTACTO*/
 .containerForm {
   background-color: #E6E7E8;
   display: block;
@@ -322,7 +308,7 @@ h6 {
       border: 2px solid #2ABFCA;
       color: white; }
 
-/*---------------SERVICIOS----------------*/
+/*SERVICIOS*/
 .servicios {
   display: flex;
   flex-direction: row;
@@ -347,7 +333,23 @@ h6 {
   .servicios div ul {
     list-style: none; }
 
-/*----------------RESPONSIVE----------------*/
+/*combos .card en index, linea 164*/
+/* FOOTER*/
+.blockquote {
+  background-color: #6A67CE;
+  width: 100%;
+  height: 80px;
+  color: #E6E7E8;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 30px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0px; }
+
+/*RESPONSIVE*/
 @media (min-width: 576px) and (max-width: 1200px) {
   .nosotrosIndex {
     flex-direction: column;
