@@ -37,6 +37,42 @@
         margin-bottom:10px ;
     }
 }
+.btn {
+    border-radius: 15rem;
+    border: 2px solid; }
+
+.btn-outline-success {
+      border-color: $verde;
+      color: $verde;
+    @each $name, $color in $colors {
+        &.color-#{$name} {background-color:($color);}        
+        &:hover {
+        color:white ;    
+        border-color: $verde;
+        background-color: $verde; }
+        &:active {
+            background-color: $violeta;
+            box-shadow: 0 2px #666;
+            transform: translateY(2px);
+        }
+        }
+    }
+.btn-outline-success:not(:disabled):not(.disabled):active, .btn-outline-success:not(:disabled):not(.disabled).active,
+.show > .btn-outline-success.dropdown-toggle {
+    color: #fff;
+    background-color: $violeta;
+    border-color: $violeta;    
+}  
+.btn-outline-success:not(:disabled):not(.disabled):active:focus, .btn-outline-success:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-success.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem $verde;
+}
+
+.btn-outline-success:focus, .btn-outline-success.focus {
+    box-shadow: 0 0 0 0.2rem #CECCFF;
+  }
+
+
 /*combos*/
 .card {
      @each $name, $color in $colors {

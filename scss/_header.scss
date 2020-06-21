@@ -23,33 +23,28 @@
                 &.color-#{$name} {
                     background-color:($color);
                 }
-                    &:hover {
+                    &:hover,
+                    &[aria-expanded="true"] {
                     color: white;
                     border-color: $verde;
                     background-color: $verde; 
                    }
+                   &:active {
+                    background-color: $verde;
+                    box-shadow: 0 2px #666;
+                    transform: translateY(2px);
+                   }
             }
         }   
-    }    
+    }   
+    .navbar-collapse {
+        flex-grow: 0;
+    } 
 }
-.btn {
-    border-radius: 15rem;
-    border: 2px solid; }
+.navbar-expand-lg{
+    justify-content: center;
+}
 
-.form-control {
-    border-radius: 15rem; 
-} 
-.btn-outline-success {
-      border-color: $verde;
-      color: $verde;
-    @each $name, $color in $colors {
-        &.color-#{$name} {background-color:($color);}        
-        &:hover {
-        color:$violeta ;    
-        border-color: $verde;
-        background-color: $verde; }
-    }
-}
 .dropdown-menu {
     background-color:white;
 }

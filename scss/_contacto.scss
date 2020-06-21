@@ -5,7 +5,7 @@
     margin: auto;	
     padding: 20px;
     border: 15px solid $violeta;
-    border-radius:$borderR;
+    border-radius:15px;
     box-shadow: 4px 4px 8px 0 rgba(0,0,0,.2);
     max-width: 600px;
    .flexFormContacto {
@@ -17,7 +17,7 @@
         margin-bottom: 5px;
     }
     input {
-        border-radius: $borderR;
+        border-radius:15px;
         padding: 5px;
         border: 2px solid $violeta;
         background-color:white;
@@ -32,32 +32,32 @@
 }
 .nombreForm {
     background-color: rgba(106, 103, 206, 0.3);	
-    @include sizes($marginB,$marginR, $borderR, $padding);
+    @include sizes(10px,5px, 15px, 10px);
 }
 .emailForm {
     background-color: rgba(106, 103, 206, 0.3);
-    @include sizes($marginB,$marginR, $borderR, $padding);
+    @include sizes(10px,5px, 15px, 10px);
 }
 
 .telefonoForm {
     background-color: rgba(106, 103, 206, 0.3);
-    @include sizes($marginB,$marginR, $borderR, $padding);
+    @include sizes(10px,5px, 15px, 10px);
 }
 .estadoCivilForm {
     background-color: rgba(106, 103, 206, 0.3);	
-    @include sizes($marginB,$marginR, $borderR, $padding);
+    @include sizes(10px,5px, 15px, 10px);
     max-width: 300px;
     select {
-        border-radius: $borderR;
+        border-radius:10px;
         padding: 5px;
         border: none;
     }
 }
 .textareaForm {
     background-color: rgba(106, 103, 206, 0.3);	
-    @include sizes($marginB,$marginR, $borderR, $padding);
+    @include sizes(10px,5px, 15px, 10px);
         textarea {
-            border-radius: $borderR;
+            border-radius:15px;
             padding: 2px;
             border:none;
         }
@@ -67,7 +67,7 @@
 }
 
 .limpiarFormulario {
-    @include BotonForm ($paddingBtn, $bgc,$violeta,$border);
+    @include BotonForm (6px, $gris-claro,$violeta,2px solid #6A67CE);
     cursor: pointer;
     border-radius: 150px;
     font-size: 12px;
@@ -80,7 +80,7 @@
     }
 } 
 .enviarFormulario {
-    @include BotonForm ($paddingBtn, $bgc,$violeta,$border);
+    @include BotonForm (6px,$gris-claro,$violeta,2px solid #6A67CE);
     cursor: pointer;
     border-radius: 150px;
     font-size: 12px;

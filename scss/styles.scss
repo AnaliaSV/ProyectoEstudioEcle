@@ -8,15 +8,16 @@
     border: 1px solid $color;
     background-color: lighten($color, 37%);
 }
+//@mixin sizes($marginB,$marginR, $borderR,$padding)//
 @mixin sizes($marginB,$marginR, $borderR,$padding) {
    margin-bottom:$marginB;
    margin-right: $marginR;
    border-radius: $borderR;
    padding: $padding;
 }
-@mixin BotonForm ($paddingBtn, $bgc,$violeta,$border) {
+@mixin BotonForm ($paddingBtn, $gris-claro,$violeta,$border) {
     padding:$paddingBtn;
-    background-color:$bgc;
+    background-color:$gris-claro;
     color:$violeta;
     border: $border;
 }
