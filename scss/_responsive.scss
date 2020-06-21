@@ -25,7 +25,21 @@
         max-width: 100%;   
         align-items: center;
     }
+    .navbar-expand-lg{
+        justify-content: center;
+    }
 }
+@media (max-width: 991px) {
+    .navbar-expand-lg {
+        justify-content: space-between;
+    }
+} 
+@media (min-width: 991px) {
+    .navbar-expand-lg {
+        justify-content: center;
+    }
+}  
+
  @media (max-width:767px) {
     .card-deck { 
         flex-direction: column; 

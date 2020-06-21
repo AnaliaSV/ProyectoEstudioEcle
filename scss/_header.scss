@@ -23,32 +23,46 @@
                 &.color-#{$name} {
                     background-color:($color);
                 }
-                    &:hover,
-                    &[aria-expanded="true"] {
+                &:hover,
+                &[aria-expanded="true"] {
                     color: white;
                     border-color: $verde;
                     background-color: $verde; 
-                   }
-                   &:active {
+                }
+                &:active {
                     background-color: $verde;
                     box-shadow: 0 2px #666;
                     transform: translateY(2px);
-                   }
+                }
             }
         }   
     }   
+    .navbar-toggler{
+        background-color: $verde;
+        cursor: pointer;
+        span {
+            font-size: 3rem;
+        }
+        @each $name, $color in $colors {
+            &.color-#{$name} {color:$color;       
+                &:hover,
+                &[aria-expanded="true"] {
+                color: white;
+                } 
+                }
+        }
+    }
     .navbar-collapse {
         flex-grow: 0;
     } 
-}
-.navbar-expand-lg{
-    justify-content: center;
-}
+    .navbar-expand-lg{
+        justify-content: center;
+    }
+    .dropdown-menu {
+        background-color:white;
+    }
 
-.dropdown-menu {
-    background-color:white;
 }
-
 .dropdown-item {
     background-color:white;
     &:hover {
