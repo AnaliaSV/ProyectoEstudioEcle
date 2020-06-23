@@ -22,7 +22,7 @@
     border: $border;
 }
 h2 {
-    font-family: 'Francois One';
+    font-family:"magra";
     text-transform: uppercase;
 }
 a {
@@ -37,6 +37,8 @@ body {
     padding-bottom: 200px;
     padding-top: 200px;
     background-color:$gris-claro;
+    line-height: 1.7;
+    font-family: 'Lato', sans-serif;
 }
 @for $i from 1 through 6 {
     h#{$i} {font-size: 5.3rem/$i;}

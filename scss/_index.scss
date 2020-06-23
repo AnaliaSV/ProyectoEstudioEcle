@@ -5,11 +5,42 @@
     margin: auto; 
 }
 /* servicios*/
-.iconCombo {
-    font-size: 45px;
-    padding-bottom: 5px;
-    text-align: center; 
+.color-white{
+    background-color: white;  
+    .container {
+      /*  h3 {
+            text-align: center;
+            padding-top: 2rem;
+            color: $violeta;
+            font-size: 3rem;
+           font-weight: bolder;
+        }*/
+            .comboIndex {
+                padding-bottom: 3rem;
+                padding-top: 1rem;
+                text-align: center;
+                 .card {
+                     border:0 ;
+                    .iconCombo {
+                        font-size: 45px;
+                        padding-bottom: 5px;
+                        text-align: center; 
+                    }
+                h4 {
+                        font-weight: bold;
+                        font-size: 20px;
+                        color: $verde;
+                        text-align: center;
+                        margin-bottom: 0.5rem;
+                    }
+                p { 
+                    line-height: 1.5;
+                }
+            }
+        }    
+    }    
 }
+
 .col-sm {
     p {
         text-align: center;}
@@ -22,6 +53,17 @@
     text-align: center;
 }
 /*nosotros*/
+.nosotrosIndexTexto {
+    h3{
+        padding-top: 1.5rem;
+        padding-bottom: 0.7rem;
+    }
+    p { font-size: 18px;
+        strong {
+            font-size: 18px;
+        }
+    }
+}
 .botonIzquierda {
     text-transform: uppercase;
 	padding-top: 10px;
@@ -74,12 +116,20 @@
 
 
 /*combos*/
-.card {
-     @each $name, $color in $colors {
-        &.color-#{$name} {
-        @include oscuridad($color);}        
-    }
-    .serviciosCombosTitle {
+.combos {
+    h3 {
+        text-align: center;
+        padding-bottom: 2rem;
+        color: $violeta;
         font-weight: bold;
+    }
+    .card {
+        @each $name, $color in $colors {
+            &.color-#{$name} {
+            @include oscuridad($color);}
+        }
+        .serviciosCombosTitle {
+            font-weight: bold;
+        }
     }
 }
