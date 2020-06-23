@@ -62,5 +62,12 @@
         max-width: 100%;  
         align-items: center; 
     }
+    .containerForm {
+        .flexFormContacto {
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+    }
+
 }
  

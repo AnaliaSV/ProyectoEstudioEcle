@@ -1,6 +1,6 @@
 @charset "UTF-8";
 :root {
-  font-size: 16px; }
+  font-size: 17px; }
 
 /*$marginB:10px;
 $marginR:5px;
@@ -12,6 +12,13 @@ $border:2px solid #6A67CE;
 h2 {
   font-family: "magra";
   text-transform: uppercase; }
+
+h3 {
+  font-family: "magra";
+  text-transform: uppercase; }
+
+h4 {
+  font-family: "magra"; }
 
 a {
   text-transform: uppercase;
@@ -70,7 +77,14 @@ h6 {
     background-color: #2ABFCA; }
 
 .navbar .navbar-nav {
-  list-style: none; }
+  list-style: none;
+  font-family: "lato";
+  font-weight: bold;
+  font-size: 1rem; }
+  .navbar .navbar-nav .btn {
+    border: 0px;
+    font-weight: bold;
+    line-height: 1.7; }
   .navbar .navbar-nav .nav-link {
     padding: 10px;
     border-radius: 15px;
@@ -138,42 +152,58 @@ h6 {
   .dropdown-item:hover {
     background-color: #2ABFCA; }
 
+.modal-contacto .modal-content {
+  background-color: transparent;
+  border: 0px; }
+  .modal-contacto .modal-content .modal-header {
+    border-bottom: 0px; }
+    .modal-contacto .modal-content .modal-header .close {
+      background-color: #2ABFCA;
+      opacity: 100; }
+      .modal-contacto .modal-content .modal-header .close:hover {
+        opacity: .5; }
+
 /* PÁGINAS */
 /*INDEX*/
 /*carrousel*/
-.carousel-inner {
-  width: 90%;
-  margin: auto; }
-
+/*.carousel-inner {
+    
+    margin: auto; 
+}*/
 /* servicios*/
 .color-white {
   background-color: white; }
-  .color-white .container {
-    /*  h3 {
-            text-align: center;
-            padding-top: 2rem;
-            color: $violeta;
-            font-size: 3rem;
-           font-weight: bolder;
-        }*/ }
-    .color-white .container .comboIndex {
-      padding-bottom: 3rem;
-      padding-top: 1rem;
+  .color-white .container .comboIndex {
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    text-align: center; }
+    .color-white .container .comboIndex .card {
+      border: 0;
       text-align: center; }
-      .color-white .container .comboIndex .card {
-        border: 0; }
-        .color-white .container .comboIndex .card .iconCombo {
-          font-size: 45px;
-          padding-bottom: 5px;
-          text-align: center; }
-        .color-white .container .comboIndex .card h4 {
-          font-weight: bold;
-          font-size: 20px;
-          color: #2ABFCA;
-          text-align: center;
-          margin-bottom: 0.5rem; }
-        .color-white .container .comboIndex .card p {
-          line-height: 1.5; }
+      .color-white .container .comboIndex .card .iconCombo {
+        font-size: 45px;
+        padding-bottom: 5px;
+        text-align: center;
+        color: #2ABFCA; }
+        .color-white .container .comboIndex .card .iconCombo i {
+          color: #6A67CE;
+          padding-top: 10px; }
+      .color-white .container .comboIndex .card h4 {
+        color: #2ABFCA;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 1rem;
+        font-family: "magra"; }
+      .color-white .container .comboIndex .card .line {
+        border-top: 0.35rem solid #2ABFCA;
+        margin: auto;
+        width: 50px; }
+      .color-white .container .comboIndex .card p {
+        line-height: 1.5;
+        padding-top: .5rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        font-weight: bold; }
 
 .col-sm p {
   text-align: center; }
@@ -189,7 +219,8 @@ h6 {
 /*nosotros*/
 .nosotrosIndexTexto h3 {
   padding-top: 1.5rem;
-  padding-bottom: 0.7rem; }
+  padding-bottom: 0.7rem;
+  color: #6A67CE; }
 
 .nosotrosIndexTexto p {
   font-size: 18px; }
@@ -212,7 +243,7 @@ h6 {
 
 .btn {
   border-radius: 15rem;
-  border: 2px solid; }
+  border: 3px solid; }
 
 .btn-outline-success {
   border-color: #2ABFCA;
@@ -269,19 +300,20 @@ h6 {
   font-weight: bold; }
 
 .combos .card.color-violeta {
-  border: 1px solid #6A67CE;
+  border: 3px solid #6A67CE;
   background-color: #f6f6fc; }
 
 .combos .card.color-violeta-claro {
-  border: 1px solid #CECCFF;
-  background-color: white; }
+  border: 3px solid #CECCFF;
+  background-color: #f6f6fc; }
 
 .combos .card.color-verde {
-  border: 1px solid #2ABFCA;
-  background-color: #bfeef2; }
+  border: 3px solid #2ABFCA;
+  background-color: #f6f6fc; }
 
 .combos .card .serviciosCombosTitle {
-  font-weight: bold; }
+  font-weight: bold;
+  color: #6A67CE; }
 
 .nosotrosTitulo {
   margin-top: 3rem;
@@ -333,7 +365,6 @@ h6 {
   .containerForm .flexFormContacto {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between; }
     .containerForm .flexFormContacto p {
       margin-bottom: 5px; }
@@ -514,4 +545,7 @@ h6 {
   .servicios {
     flex-direction: column;
     max-width: 100%;
-    align-items: center; } }
+    align-items: center; }
+  .containerForm .flexFormContacto {
+    flex-wrap: wrap;
+    flex-direction: column; } }

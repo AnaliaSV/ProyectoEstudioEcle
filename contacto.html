@@ -49,53 +49,107 @@
 								</div>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link color-violeta" href="contacto.html">contacto</a>
+								<a href="#modalEjemplo" data-toggle="modal" class="btn nav-link color-violeta">contacto</a>
 							</li>
 						</ul>
 					</div>	
 				</nav>
 			</div>
 		</header>
+		<!--MODAL DE CONTACTO-->
+		<div class="modal modal-contacto" id="modalEjemplo" tabindex="1" role="dialog">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">
+							<span>&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="containerForm animate__animated animate__bounce">
+							<h2>contacto</h2>
+							<form>
+								<div class="flexFormContacto">	
+									<div class="form-group nombreForm">
+										<label for="name">Nombre</label>
+										<input type="text" name="nombre" class="form-control" placeholder="Tu nombre" id="name" required>
+									</div>	
+									<div class="form-group emailForm">
+										<label for="email">Email address</label>
+										<input type="email" name="email"  class="form-control"  placeholder="hola@ejemplo.com" id="email" required>
+									</div>
+								</div>
+								<div class="telefonoForm">	
+									<div class="form-group">
+										<label for="telefono">Celular</label>
+										<input type="number" name="phone"  class="form-control" placeholder="(011)1500000000" id="telefono" required>
+									</div>
+								</div>
+								<div>
+									<input Value="si" type="checkbox" name="acepto" id="Newsletter"> 
+									<label for="Newsletter">Newsletter</label>	
+								</div>
+								<div class="textareaForm  form-group">
+									<label for="exampleFormControlTextarea1">Example textarea</label>
+									<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+								</div>
+								<button class="limpiarFormulario btn btn-outline-success" type="reset">
+									<span>Limpiar formulario</span>
+								</button>
+								<button class="enviarFormulario btn btn-outline-success" type="submit">
+									<span>enviar formulario</span>
+								</button>
+								<div class="terminosYcondiciones">
+									<input type="checkbox" name="acepto" required id="condiciones">
+									<label for="condiciones">Acepta terminos y condiciones</label>
+								</div>	
+									<a href="http://google.com.ar">Ver Terminos y condiciones</a>
+							</form>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>
 		<section class="container">
 			<div class="containerForm animate__animated animate__bounce">
 				<h2>contacto</h2>
-					<form>
-						<div class="flexFormContacto">	
-							<div class="form-group nombreForm">
-								<label for="name">Nombre</label>
-								<input type="text" name="nombre" class="form-control" placeholder="Tu nombre" id="name" required>
-							</div>	
-							<div class="form-group emailForm">
-								<label for="email">Email address</label>
-								<input type="email" name="email"  class="form-control"  placeholder="hola@ejemplo.com" id="email" required>
-							</div>
-						</div>
-						<div class="telefonoForm">	
-							<div class="form-group">
-								<label for="telefono">Celular</label>
-								<input type="number" name="phone"  class="form-control" placeholder="(011)1500000000" id="telefono" required>
-							</div>
-						</div>
-						<div>
-							<input Value="si" type="checkbox" name="acepto" id="Newsletter"> 
-							<label for="Newsletter">Newsletter</label>	
-						</div>
-						<div class="textareaForm  form-group">
-							<label for="exampleFormControlTextarea1">Example textarea</label>
-							<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-						</div>
-						<button class="limpiarFormulario btn btn-outline-success" type="reset">
-							<span>Limpiar formulario</span>
-						</button>
-						<button class="enviarFormulario btn btn-outline-success" type="submit">
-							<span>enviar formulario</span>
-						</button>
-						<div class="terminosYcondiciones">
-							<input type="checkbox" name="acepto" required id="condiciones">
-							<label for="condiciones">Acepta terminos y condiciones</label>
+				<form>
+					<div class="flexFormContacto">	
+						<div class="form-group nombreForm">
+							<label for="name">Nombre</label>
+							<input type="text" name="nombre" class="form-control" placeholder="Tu nombre" id="name" required>
 						</div>	
-							<a href="http://google.com.ar">Ver Terminos y condiciones</a>
-					</form>
+						<div class="form-group emailForm">
+							<label for="email">Email address</label>
+							<input type="email" name="email"  class="form-control"  placeholder="hola@ejemplo.com" id="email" required>
+						</div>
+					</div>
+					<div class="telefonoForm">	
+						<div class="form-group">
+							<label for="telefono">Celular</label>
+							<input type="number" name="phone"  class="form-control" placeholder="(011)1500000000" id="telefono" required>
+						</div>
+					</div>
+					<div>
+						<input Value="si" type="checkbox" name="acepto" id="Newsletter"> 
+						<label for="Newsletter">Newsletter</label>	
+					</div>
+					<div class="textareaForm  form-group">
+						<label for="exampleFormControlTextarea1">Example textarea</label>
+						<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+					</div>
+					<button class="limpiarFormulario btn btn-outline-success" type="reset">
+						<span>Limpiar formulario</span>
+					</button>
+					<button class="enviarFormulario btn btn-outline-success" type="submit">
+						<span>enviar formulario</span>
+					</button>
+					<div class="terminosYcondiciones">
+						<input type="checkbox" name="acepto" required id="condiciones">
+						<label for="condiciones">Acepta terminos y condiciones</label>
+					</div>	
+						<a href="http://google.com.ar">Ver Terminos y condiciones</a>
+				</form>
 			</div>			
 		</section>
 		<blockquote class="blockquote">

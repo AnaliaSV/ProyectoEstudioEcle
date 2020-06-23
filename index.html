@@ -50,13 +50,67 @@
 								</div>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link color-violeta" href="contacto.html">contacto</a>
+								<a href="#modalEjemplo" data-toggle="modal" class="btn nav-link color-violeta">contacto</a>
 							</li>
 						</ul>
 					</div>	
 				</nav>
 			</div>
 		</header>
+		<!--MODAL DE CONTACTO-->
+		<div class="modal modal-contacto" id="modalEjemplo" tabindex="1" role="dialog">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">
+							<span>&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="containerForm animate__animated animate__bounce">
+							<h2>contacto</h2>
+							<form>
+								<div class="flexFormContacto">	
+									<div class="form-group nombreForm">
+										<label for="name">Nombre</label>
+										<input type="text" name="nombre" class="form-control" placeholder="Tu nombre" id="name" required>
+									</div>	
+									<div class="form-group emailForm">
+										<label for="email">Email address</label>
+										<input type="email" name="email"  class="form-control"  placeholder="hola@ejemplo.com" id="email" required>
+									</div>
+								</div>
+								<div class="telefonoForm">	
+									<div class="form-group">
+										<label for="telefono">Celular</label>
+										<input type="number" name="phone"  class="form-control" placeholder="(011)1500000000" id="telefono" required>
+									</div>
+								</div>
+								<div>
+									<input Value="si" type="checkbox" name="acepto" id="Newsletter"> 
+									<label for="Newsletter">Newsletter</label>	
+								</div>
+								<div class="textareaForm  form-group">
+									<label for="exampleFormControlTextarea1">Example textarea</label>
+									<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+								</div>
+								<button class="limpiarFormulario btn btn-outline-success" type="reset">
+									<span>Limpiar formulario</span>
+								</button>
+								<button class="enviarFormulario btn btn-outline-success" type="submit">
+									<span>enviar formulario</span>
+								</button>
+								<div class="terminosYcondiciones">
+									<input type="checkbox" name="acepto" required id="condiciones">
+									<label for="condiciones">Acepta terminos y condiciones</label>
+								</div>	
+									<a href="http://google.com.ar">Ver Terminos y condiciones</a>
+							</form>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>
 		<main>
 			<section id="carouselExampleCaptions" class="carousel slide mb-5 my-5 animate__animated animate__fadeInDown" data-ride="carousel">
 				<ol class="carousel-indicators">
@@ -92,37 +146,35 @@
 			</section>
 			<section class="color-white">
 				<div class="container">
-				<!--<h3>Consultoria creativa</h3>-->
 					<div class="comboIndex">				
 						<div class="card-deck">
 							<div class="card col-sm-4">
 								<div class="card-body">	
 									<div class="iconCombo">
-										<i class="mdi mdi-desktop-classic"></i>
+										<img src="images/ideas-graficas.png">
 									</div>
 									<h4>Ideas Gráficas</h4>
-									<p>Tanto impresas <br>
-									como digitales.
-									</p>
+									<div class="line"></div>
+									<p>Tanto piezas impresas<br>como digitales.</p>
 								</div>	
 							</div>
 							<div class="card col-sm-4">
 								<div class="card-body">	
 									<div class="iconCombo">
-										<i class="mdi mdi-file-document"></i>
+										<img src="images/diseño-web-tienda.png">
 									</div>
 									<h4>Diseño Web/Tienda</h4>
-									<p>Maquetado, SEO, Diseño, 
-									Configuración de Analitica. 
-									</p>
+									<div class="line"></div>
+									<p>Maquetado, SEO, Diseño, Configuración de Analitica.</p>
 								</div>	
 							</div>
 							<div class="card col-sm-4">
 								<div class="card-body">	
 									<div class="iconCombo">
-										<i class="mdi mdi-file-document"></i>
+										<img src="images/social-media.png">
 									</div>
 									<h4>Social Media</h4>
+									<div class="line"></div>
 									<p>Community Management.</p>
 								</div>	
 							</div>
@@ -137,7 +189,7 @@
 						<img src="images/imagenNosotros700.jpg" class="img-fluid animate__animated animate__bounce" >
 					</div>
 					<div class="col-12 col-6 col-md-4 nosotrosIndexTexto">
-						<h3>SOBRE MI</h3>
+						<h3>Sobre mi</h3>
 						<p>Eclé, es un estudio en el que muestro mi trabajo profesional y universitario. Cuento con experiencia para diseñar de modo integral y adaptarme a la necesidad de cada empresa. Mi compromiso es proyectar trabajos de la más alta calidad.<br>
 						<strong> Me gusta el diseño Web y Grafico</strong>, siempre estoy en busca de capacitarme y aprender en equipo o individualmente. 
 						</p>
@@ -149,28 +201,28 @@
 					</div>
 				</div>
 			</section>
-			<section class=" combos container">
+			<section class="combos container">
 				<h3>Consultoria creativa</h3>
 				<div class="card-deck">		
-					<div class="card color-violeta">
+					<div class="card color-verde">
 						<div class="card-body ">
-							<h5 class="serviciosCombosTitle">COMBO ESTANDAR</h5>
+							<h4 class="serviciosCombosTitle">Presencia Online</h4>
 							<p class="card-text">
 								This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.
 							</p>
 						</div>
 					</div>
-					<div class="card color-violeta">
+					<div class="card color-verde">
 						<div class="card-body">
-							<h5 class="serviciosCombosTitle">COMBO CLÁSICO</h5>
+							<h4 class="serviciosCombosTitle">Presencia Web</h4>
 							<p class="card-text">
 								This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.
 							</p>
 						</div>
 					</div>
-					<div class="card color-violeta">
+					<div class="card color-verde">
 						<div class="card-body">
-							<h5 class="serviciosCombosTitle">COMBO PREMIUM</h5>
+							<h4 class="serviciosCombosTitle">Gráfica Institucional</h4>
 							<p class="card-text">
 								This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.
 							</p>

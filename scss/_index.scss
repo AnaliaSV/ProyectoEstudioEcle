@@ -1,40 +1,48 @@
 /*INDEX*/
 /*carrousel*/
-.carousel-inner {
-    width: 90%;
+/*.carousel-inner {
+    
     margin: auto; 
-}
+}*/
 /* servicios*/
 .color-white{
     background-color: white;  
     .container {
-      /*  h3 {
+        .comboIndex {
+            padding-bottom: 3rem;
+            padding-top: 3rem;
             text-align: center;
-            padding-top: 2rem;
-            color: $violeta;
-            font-size: 3rem;
-           font-weight: bolder;
-        }*/
-            .comboIndex {
-                padding-bottom: 3rem;
-                padding-top: 1rem;
-                text-align: center;
-                 .card {
-                     border:0 ;
-                    .iconCombo {
-                        font-size: 45px;
-                        padding-bottom: 5px;
-                        text-align: center; 
+                
+            .card {
+                 border:0 ;text-align: center;
+                .iconCombo {
+                    font-size: 45px;
+                    padding-bottom: 5px;
+                    text-align: center; 
+                    color: $verde;
+                    i {
+                        color: $violeta;
+                        padding-top:10px;
                     }
+                }
                 h4 {
-                        font-weight: bold;
-                        font-size: 20px;
-                        color: $verde;
-                        text-align: center;
-                        margin-bottom: 0.5rem;
+                    color:$verde;
+                    font-weight: bold;
+                    text-align: center;
+                    margin-bottom: 1rem;
+                    font-family:"magra";
+                    }
+                    .line {
+                        border-top: 0.35rem solid $verde;
+                        margin:auto;
+                        width: 50px;
                     }
                 p { 
                     line-height: 1.5;
+                    padding-top: .5rem;
+                    margin-left: 3rem;
+                    margin-right: 3rem;
+                    font-weight: bold;
                 }
             }
         }    
@@ -54,9 +62,11 @@
 }
 /*nosotros*/
 .nosotrosIndexTexto {
-    h3{
+    h3 {
         padding-top: 1.5rem;
         padding-bottom: 0.7rem;
+        color:$violeta;
+        
     }
     p { font-size: 18px;
         strong {
@@ -81,7 +91,7 @@
 }
 .btn {
     border-radius: 15rem;
-    border: 2px solid; }
+    border: 3px solid; }
 
 .btn-outline-success {
       border-color: $verde;
@@ -114,7 +124,6 @@
     box-shadow: 0 0 0 0.2rem #CECCFF;
   }
 
-
 /*combos*/
 .combos {
     h3 {
@@ -130,6 +139,7 @@
         }
         .serviciosCombosTitle {
             font-weight: bold;
+            color: $violeta;
         }
     }
 }

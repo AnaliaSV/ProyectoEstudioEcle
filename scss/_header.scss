@@ -15,6 +15,15 @@
 .navbar {
     .navbar-nav{
         list-style: none;
+        font-family: "lato";
+        font-weight: bold;
+        font-size:1rem;
+        .btn {
+            border:0px;
+            font-weight: bold;
+            line-height:1.7;
+            
+        }
         .nav-link { 
             padding:10px;
             border-radius: 15px;
@@ -67,5 +76,22 @@
     background-color:white;
     &:hover {
     background-color:$verde;    
+    }
+}
+
+.modal-contacto {
+    .modal-content{
+        background-color:transparent;
+        border: 0px;
+        .modal-header{
+            border-bottom:0px;
+             .close {
+            background-color: $verde;
+            opacity: 100;
+                &:hover{
+                    opacity: .5;
+                }
+            }
+        }
     }
 }

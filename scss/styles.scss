@@ -1,12 +1,12 @@
 :root { 
-    font-size: 16px;
+    font-size: 17px;
 }
 // _variables.scss
 @import "variables";
 
 @mixin oscuridad($color) {
-    border: 1px solid $color;
-    background-color: lighten($color, 37%);
+    border: 3px solid $color;
+    background-color: lighten($violeta, 37%);
 }
 //@mixin sizes($marginB,$marginR, $borderR,$padding)//
 @mixin sizes($marginB,$marginR, $borderR,$padding) {
@@ -24,6 +24,15 @@
 h2 {
     font-family:"magra";
     text-transform: uppercase;
+}
+
+h3 {
+    font-family:"magra";
+    text-transform: uppercase;
+}
+
+h4 {
+    font-family:"magra";
 }
 a {
     text-transform: uppercase;
