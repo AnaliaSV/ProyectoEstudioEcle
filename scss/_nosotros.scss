@@ -1,15 +1,19 @@
 //----------------------NOSOTROS----------------------//
-.nosotrosTitulo {  
+.nosotros-titulo {  
     margin-top: 3rem;
     text-align: center;
     color: $violeta;
 } 
-
 .card-nosotros {
     border:2px solid $violeta;
+    .card-body {
+        .card-title {
+            color: $violeta;
+        }
+    }
     .card-footer {
         background-color:$violeta-claro;
-        .redesNosotros {
+        .redes-nosotros {
             display: flex;
             align-items: center;
             justify-content:space-around;

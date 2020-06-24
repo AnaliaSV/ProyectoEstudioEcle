@@ -5,10 +5,10 @@
     margin: auto; 
 }*/
 /* servicios*/
-.color-white{
+.color-white {
     background-color: white;  
     .container {
-        .comboIndex {
+        .combo-index {
             padding-bottom: 3rem;
             padding-top: 3rem;
             text-align: center;
@@ -16,7 +16,7 @@
                 border:0 ;text-align: center;
                 margin: auto;
                 height: 280px;
-                .iconCombo {
+                .icon-combo {
                     font-size: 45px;
                     padding-bottom: 5px;
                     text-align: center; 
@@ -52,22 +52,23 @@
 
 .col-sm {
     p {
-        text-align: center;}
+        text-align: center;
+    }
     h3 {
-    text-align: center; }
+    text-align: center; 
+    }
 }
-.tituloCombos {
+.titulo-combos {
     padding: 50px;
     align-items: center;
     text-align: center;
 }
 /*nosotros*/
-.nosotrosIndexTexto {
+.nosotros-index-texto {
     h3 {
         padding-top: 1.5rem;
         padding-bottom: 0.7rem;
-        color:$violeta;
-        
+        color:$violeta;    
     }
     p { font-size: 18px;
         strong {
@@ -75,7 +76,7 @@
         }
     }
 }
-.botonIzquierda {
+.boton-izquierda {
     text-transform: uppercase;
 	padding-top: 10px;
 	padding-bottom:0;
@@ -92,8 +93,8 @@
 }
 .btn {
     border-radius: 15rem;
-    border: 3px solid; }
-
+    border: 3px solid; 
+}
 .btn-outline-success {
       border-color: $verde;
       color: $verde;
@@ -108,8 +109,8 @@
             box-shadow: 0 2px #666;
             transform: translateY(2px);
         }
-        }
     }
+}
 .btn-outline-success:not(:disabled):not(.disabled):active, .btn-outline-success:not(:disabled):not(.disabled).active,
 .show > .btn-outline-success.dropdown-toggle {
     color: #fff;
@@ -138,7 +139,7 @@
             &.color-#{$name} {
             @include oscuridad($color);}
         }
-        .serviciosCombosTitle {
+        .servicios-combos-title {
             font-weight: bold;
             color: $violeta;
         }

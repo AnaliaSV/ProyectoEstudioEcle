@@ -28,7 +28,7 @@ a {
 body {
   position: relative;
   padding-bottom: 200px;
-  padding-top: 150px;
+  padding-top: 200px;
   background-color: #F7F7F7;
   line-height: 1.7;
   font-family: 'Lato', sans-serif; }
@@ -60,7 +60,7 @@ h6 {
   border-radius: 15px; }
 
 /* HEADER*/
-.bgColor {
+.bg-color {
   position: fixed;
   right: 0;
   left: 0;
@@ -68,11 +68,11 @@ h6 {
   z-index: 1;
   width: 100%;
   color: black; }
-  .bgColor.color-violeta {
+  .bg-color.color-violeta {
     background-color: #6A67CE; }
-  .bgColor.color-violeta-claro {
+  .bg-color.color-violeta-claro {
     background-color: #CECCFF; }
-  .bgColor.color-verde {
+  .bg-color.color-verde {
     background-color: #2ABFCA; }
 
 .navbar .navbar-nav {
@@ -174,34 +174,34 @@ h6 {
 /* servicios*/
 .color-white {
   background-color: white; }
-  .color-white .container .comboIndex {
+  .color-white .container .combo-index {
     padding-bottom: 3rem;
     padding-top: 3rem;
     text-align: center; }
-    .color-white .container .comboIndex .card {
+    .color-white .container .combo-index .card {
       border: 0;
       text-align: center;
       margin: auto;
       height: 280px; }
-      .color-white .container .comboIndex .card .iconCombo {
+      .color-white .container .combo-index .card .icon-combo {
         font-size: 45px;
         padding-bottom: 5px;
         text-align: center;
         color: #2ABFCA; }
-        .color-white .container .comboIndex .card .iconCombo i {
+        .color-white .container .combo-index .card .icon-combo i {
           color: #6A67CE;
           padding-top: 10px; }
-      .color-white .container .comboIndex .card h4 {
+      .color-white .container .combo-index .card h4 {
         color: #2ABFCA;
         font-weight: bold;
         text-align: center;
         margin-bottom: 1rem;
         font-family: "magra"; }
-      .color-white .container .comboIndex .card .line {
+      .color-white .container .combo-index .card .line {
         border-top: 0.35rem solid #2ABFCA;
         margin: auto;
         width: 50px; }
-      .color-white .container .comboIndex .card p {
+      .color-white .container .combo-index .card p {
         line-height: 1.5;
         padding-top: .5rem;
         margin-left: 3rem;
@@ -214,23 +214,23 @@ h6 {
 .col-sm h3 {
   text-align: center; }
 
-.tituloCombos {
+.titulo-combos {
   padding: 50px;
   align-items: center;
   text-align: center; }
 
 /*nosotros*/
-.nosotrosIndexTexto h3 {
+.nosotros-index-texto h3 {
   padding-top: 1.5rem;
   padding-bottom: 0.7rem;
   color: #6A67CE; }
 
-.nosotrosIndexTexto p {
+.nosotros-index-texto p {
   font-size: 18px; }
-  .nosotrosIndexTexto p strong {
+  .nosotros-index-texto p strong {
     font-size: 18px; }
 
-.botonIzquierda {
+.boton-izquierda {
   text-transform: uppercase;
   padding-top: 10px;
   padding-bottom: 0;
@@ -239,9 +239,9 @@ h6 {
   border-radius: 15px;
   cursor: pointer;
   font-size: 15px; }
-  .botonIzquierda:hover {
+  .boton-izquierda:hover {
     color: white; }
-  .botonIzquierda p {
+  .boton-izquierda p {
     margin-bottom: 10px; }
 
 .btn {
@@ -314,51 +314,53 @@ h6 {
   border: 3px solid #2ABFCA;
   background-color: #f6f6fc; }
 
-.combos .card .serviciosCombosTitle {
+.combos .card .servicios-combos-title {
   font-weight: bold;
   color: #6A67CE; }
 
-.nosotrosTitulo {
+.nosotros-titulo {
   margin-top: 3rem;
   text-align: center;
   color: #6A67CE; }
 
 .card-nosotros {
   border: 2px solid #6A67CE; }
+  .card-nosotros .card-body .card-title {
+    color: #6A67CE; }
   .card-nosotros .card-footer {
     background-color: #CECCFF; }
-    .card-nosotros .card-footer .redesNosotros {
+    .card-nosotros .card-footer .redes-nosotros {
       display: flex;
       align-items: center;
       justify-content: space-around;
       font-size: 2rem; }
-      .card-nosotros .card-footer .redesNosotros a.color-violeta {
+      .card-nosotros .card-footer .redes-nosotros a.color-violeta {
         color: #6A67CE; }
-        .card-nosotros .card-footer .redesNosotros a.color-violeta:hover {
+        .card-nosotros .card-footer .redes-nosotros a.color-violeta:hover {
           color: #2f2c89; }
-      .card-nosotros .card-footer .redesNosotros a.color-violeta-claro {
+      .card-nosotros .card-footer .redes-nosotros a.color-violeta-claro {
         color: #CECCFF; }
-        .card-nosotros .card-footer .redesNosotros a.color-violeta-claro:hover {
+        .card-nosotros .card-footer .redes-nosotros a.color-violeta-claro:hover {
           color: #544dff; }
-      .card-nosotros .card-footer .redesNosotros a.color-verde {
+      .card-nosotros .card-footer .redes-nosotros a.color-verde {
         color: #2ABFCA; }
-        .card-nosotros .card-footer .redesNosotros a.color-verde:hover {
+        .card-nosotros .card-footer .redes-nosotros a.color-verde:hover {
           color: #145b60; }
 
 /*PORTFOLIO*/
 .galeria {
   padding: 15px;
-  border: 1px solid #2ABFCA; }
+  border: 3px solid #2ABFCA; }
   .galeria a:hover {
     opacity: 0.6; }
-  .galeria a .hover-card-galeria:hover {
-    background-color: red; }
   .galeria .card-body .card-title {
-    color: #6A67CE; }
+    color: #6A67CE;
+    text-transform: uppercase; }
   .galeria .card-body p {
     color: #58595B; }
   .galeria:hover {
-    border: 3px solid #6A67CE; }
+    border: 3px solid #6A67CE;
+    opacity: .6; }
 
 .row-cols-md-3 .modal {
   width: 100%;
@@ -376,14 +378,14 @@ h6 {
   padding: 50px;
   flex-wrap: wrap;
   justify-content: center; }
-  .servicios .serviciosItem {
+  .servicios .servicios-item {
     display: flex;
     flex-direction: row;
     padding: 20px; }
-    .servicios .serviciosItem .servicioI {
+    .servicios .servicios-item .servicio-i {
       border-right: 3px solid #6A67CE;
       height: 265px; }
-      .servicios .serviciosItem .servicioI .servicioIcon {
+      .servicios .servicios-item .servicio-i .servicio-icon {
         display: flex;
         flex-direction: column;
         height: 200px;
@@ -394,24 +396,24 @@ h6 {
   .servicios div ul {
     list-style: none; }
 
-.serviciosCombos .card.color-violeta {
+.servicios-combos .card.color-violeta {
   border: 3px solid #6A67CE;
   background-color: #f6f6fc; }
 
-.serviciosCombos .card.color-violeta-claro {
+.servicios-combos .card.color-violeta-claro {
   border: 3px solid #CECCFF;
   background-color: #f6f6fc; }
 
-.serviciosCombos .card.color-verde {
+.servicios-combos .card.color-verde {
   border: 3px solid #2ABFCA;
   background-color: #f6f6fc; }
 
-.serviciosCombos .card .serviciosCombosTitle {
+.servicios-combos .card .servicios-combos-title {
   font-weight: bold;
   color: #6A67CE; }
 
 /*CONTACTO*/
-.containerForm {
+.container-form {
   background-color: #E6E7E8;
   display: block;
   margin: auto;
@@ -420,75 +422,75 @@ h6 {
   border-radius: 15px;
   box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 600px; }
-  .containerForm .flexFormContacto {
+  .container-form .flex-form-contacto {
     display: flex;
     flex-direction: row;
     justify-content: space-between; }
-    .containerForm .flexFormContacto p {
+    .container-form .flex-form-contacto p {
       margin-bottom: 5px; }
-    .containerForm .flexFormContacto input {
+    .container-form .flex-form-contacto input {
       border-radius: 15px;
       border: 2px solid #6A67CE;
       background-color: white; }
-    .containerForm .flexFormContacto input:focus {
+    .container-form .flex-form-contacto input:focus {
       outline: 0;
       border: 2px solid #6A67CE;
       background-color: #2ABFCA;
       color: white; }
-  .containerForm .nombreForm {
+  .container-form .nombre-form {
     background-color: rgba(106, 103, 206, 0.3);
     margin-bottom: 10px;
     margin-right: 5px;
     border-radius: 15px;
     padding: 10px; }
-    .containerForm .nombreForm .form-control {
+    .container-form .nombre-form .form-control {
       padding: 0.475rem 1rem; }
-  .containerForm .emailForm {
+  .container-form .email-form {
     background-color: rgba(106, 103, 206, 0.3);
     margin-bottom: 10px;
     margin-right: 5px;
     border-radius: 15px;
     padding: 10px; }
-    .containerForm .emailForm .form-control {
+    .container-form .email-form .form-control {
       padding: 0.475rem 1rem; }
-  .containerForm .telefonoForm {
+  .container-form .telefono-form {
     background-color: rgba(106, 103, 206, 0.3);
     margin-bottom: 10px;
     margin-right: 5px;
     border-radius: 15px;
     padding: 10px; }
-    .containerForm .telefonoForm .form-group input {
+    .container-form .telefono-form .form-group input {
       border: 2px solid #6A67CE;
       border-radius: 15px; }
-    .containerForm .telefonoForm input:focus {
+    .container-form .telefono-form input:focus {
       outline: 0;
       border: 2px solid #6A67CE;
       background-color: #2ABFCA;
       color: white; }
-  .containerForm .estadoCivilForm {
+  .container-form .estado-civil-form {
     background-color: rgba(106, 103, 206, 0.3);
     margin-bottom: 10px;
     margin-right: 5px;
     border-radius: 15px;
     padding: 10px;
     max-width: 300px; }
-    .containerForm .estadoCivilForm select {
+    .container-form .estado-civil-form select {
       border-radius: 10px;
       padding: 5px;
       border: none; }
-  .containerForm .textareaForm {
+  .container-form .textarea-form {
     background-color: rgba(106, 103, 206, 0.3);
     margin-bottom: 10px;
     margin-right: 5px;
     border-radius: 15px;
     padding: 10px; }
-    .containerForm .textareaForm textarea {
+    .container-form .textarea-form textarea {
       border-radius: 15px;
       padding: 2px;
       border: none; }
-  .containerForm .terminosYcondiciones {
+  .container-form .terminos-y-condiciones {
     padding-top: 15px; }
-  .containerForm .limpiarFormulario {
+  .container-form .limpiar-formulario {
     padding: 6px;
     background-color: #F7F7F7;
     color: #6A67CE;
@@ -497,11 +499,11 @@ h6 {
     border-radius: 150px;
     font-size: 12px;
     text-transform: uppercase; }
-    .containerForm .limpiarFormulario:hover {
+    .container-form .limpiar-formulario:hover {
       background-color: #2ABFCA;
       border: 2px solid #2ABFCA;
       color: white; }
-  .containerForm .enviarFormulario {
+  .container-form .enviar-formulario {
     padding: 6px;
     background-color: #F7F7F7;
     color: #6A67CE;
@@ -510,7 +512,7 @@ h6 {
     border-radius: 150px;
     font-size: 12px;
     text-transform: uppercase; }
-    .containerForm .enviarFormulario:hover {
+    .container-form .enviar-formulario:hover {
       background-color: #2ABFCA;
       border: 2px solid #2ABFCA;
       color: white; }
@@ -532,36 +534,39 @@ h6 {
 
 /*RESPONSIVE*/
 @media (min-width: 576px) and (max-width: 1200px) {
-  .nosotrosIndex {
+  .nosotros-index {
     flex-direction: column;
     max-width: 100%; }
-  .serviciosContainer {
+  .servicios-container {
     flex-direction: column;
     max-width: 100%; }
-  .nosotrosIndexTexto {
+  .nosotros-index-texto {
     max-width: 100%;
     margin-top: 1rem; }
-    .nosotrosIndexTexto .col-md-8 {
+    .nosotros-index-texto .col-md-8 {
       flex: 0 0 100%;
       max-width: 100%; }
-    .nosotrosIndexTexto .nosotrosIndexImagen {
+    .nosotros-index-texto .nosotros-index-imagen {
       max-width: 100%;
       flex-direction: column; }
-    .nosotrosIndexTexto .servicios {
+    .nosotros-index-texto .servicios {
       flex-direction: column;
       max-width: 100%;
       align-items: center; }
-    .nosotrosIndexTexto .navbar-expand-lg {
+    .nosotros-index-texto .navbar-expand-lg {
       justify-content: center; } }
 
 @media (max-width: 991px) {
   .navbar-expand-lg {
     justify-content: space-between; }
-  .comboIndex .card-deck {
+  .combo-index .card-deck {
     flex-direction: column;
     flex-wrap: wrap; }
-    .comboIndex .card-deck .col-sm-4 {
-      max-width: 70%; } }
+    .combo-index .card-deck .col-sm-4 {
+      max-width: 70%; }
+  .navbar .navbar-nav .btn {
+    display: flex;
+    justify-content: start; } }
 
 @media (min-width: 991px) {
   .navbar-expand-lg {
@@ -572,21 +577,21 @@ h6 {
     flex-direction: column; }
     .card-deck .card {
       margin-bottom: 1rem; }
-  .comboIndex {
+  .combo-index {
     flex-direction: column; }
-    .comboIndex .col-sm-4 {
+    .combo-index .col-sm-4 {
       max-width: 100%; }
-  .serviciosContainer {
+  .servicios-container {
     flex-direction: column;
     max-width: 100%; }
   .servicios {
     flex-direction: column;
     max-width: 100%;
     align-items: center; }
-  .containerForm .flexFormContacto {
+  .container-form .flex-form-contacto {
     flex-wrap: wrap;
     flex-direction: column; } }
 
 @media (min-width: 768px) {
-  .nosotrosIndex .col-md-8 {
+  .nosotros-index .col-md-8 {
     max-width: 100%; } }

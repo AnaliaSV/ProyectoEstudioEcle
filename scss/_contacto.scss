@@ -1,5 +1,5 @@
 /*CONTACTO*/
-.containerForm {
+.container-form {
     background-color:#E6E7E8;
     display: block;
     margin: auto;	
@@ -8,7 +8,7 @@
     border-radius:15px;
     box-shadow: 4px 4px 8px 0 rgba(0,0,0,.2);
     max-width: 600px;
-   .flexFormContacto {
+   .flex-form-contacto {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -29,14 +29,14 @@
         color: white;
     }
 }
-.nombreForm {
+.nombre-form {
     background-color: rgba(106, 103, 206, 0.3);	
     @include sizes(10px,5px, 15px, 10px);
     .form-control {
         padding:0.475rem 1rem;
     }
 }
-.emailForm {
+.email-form {
     background-color: rgba(106, 103, 206, 0.3);
     @include sizes(10px,5px, 15px, 10px);
     .form-control {
@@ -44,7 +44,7 @@
     }
 }
 
-.telefonoForm {
+.telefono-form {
     background-color: rgba(106, 103, 206, 0.3);
     @include sizes(10px,5px, 15px, 10px);
     .form-group {
@@ -60,7 +60,7 @@
         color: white;
     }
 }
-.estadoCivilForm {
+.estado-civil-form {
     background-color: rgba(106, 103, 206, 0.3);	
     @include sizes(10px,5px, 15px, 10px);
     max-width: 300px;
@@ -70,7 +70,7 @@
         border: none;
     }
 }
-.textareaForm {
+.textarea-form {
     background-color: rgba(106, 103, 206, 0.3);	
     @include sizes(10px,5px, 15px, 10px);
         textarea {
@@ -79,11 +79,11 @@
             border:none;
         }
 }
-.terminosYcondiciones {
+.terminos-y-condiciones {
     padding-top:15px;
 }
 
-.limpiarFormulario {
+.limpiar-formulario {
     @include BotonForm (6px, $gris-claro,$violeta,2px solid #6A67CE);
     cursor: pointer;
     border-radius: 150px;
@@ -96,7 +96,7 @@
     color:white;
     }
 } 
-.enviarFormulario {
+.enviar-formulario {
     @include BotonForm (6px,$gris-claro,$violeta,2px solid #6A67CE);
     cursor: pointer;
     border-radius: 150px;

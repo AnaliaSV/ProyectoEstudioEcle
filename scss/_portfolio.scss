@@ -1,30 +1,25 @@
 /*PORTFOLIO*/
 
-    .galeria {
-        padding: 15px;
-        border: 1px solid $verde;
-        a {
-            &:hover{opacity: 0.6;}
-        .hover-card-galeria {
-            &:hover{
-                background-color: red;
-            }
+.galeria {
+    padding: 15px;
+    border: 3px solid $verde;
+    a {
+        &:hover{opacity: 0.6;}
+    }
+    .card-body {
+        .card-title {
+            color:$violeta;
+            text-transform: uppercase;
         }
+        p {
+            color:$gris-oscuro;
         }
-        .card-body {
-            .card-title {
-                color:$violeta;
-            }
-            p {
-                color:$gris-oscuro;
-            }
-        }
-        &:hover {
-        
+    }
+    &:hover {
         border: 3px solid $violeta;
-    }
-    }
-
+        opacity: .6;
+     }
+}    
 .row-cols-md-3 {
     .modal {
         width: 100%;

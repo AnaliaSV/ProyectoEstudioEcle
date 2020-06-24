@@ -5,14 +5,14 @@
     padding: 50px;
     flex-wrap: wrap;
     justify-content: center;
-    .serviciosItem {
+    .servicios-item {
         display:flex;
         flex-direction: row;
         padding: 20px;
-        .servicioI {
+        .servicio-i {
             border-right: 3px solid $violeta;
             height: 265px;
-            .servicioIcon {
+            .servicio-icon {
                 display: flex;
                 flex-direction: column;
                 height: 200px;
@@ -30,13 +30,14 @@
     } 
 }
 
-.serviciosCombos {
+.servicios-combos {
     .card {
         @each $name, $color in $colors {
             &.color-#{$name} {
-            @include oscuridad($color);}
+            @include oscuridad($color);
+            }
         }
-        .serviciosCombosTitle {
+        .servicios-combos-title {
             font-weight: bold;
             color: $violeta;
         }
