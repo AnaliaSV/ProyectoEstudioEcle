@@ -2,18 +2,26 @@
 .nosotrosTitulo {  
     margin-top: 3rem;
     text-align: center;
+    color: $violeta;
 } 
-.redesNosotros {
-    display: flex;
-    align-items: center;
-    justify-content:space-around;
-    font-size: 2rem;
-    a { 
-        @each $name, $color in $colors {
-            &.color-#{$name} {color:$color;       
-                &:hover {
-                   color: darken($color, 25%);
-            }
+
+.card-nosotros {
+    border:2px solid $violeta;
+    .card-footer {
+        background-color:$violeta-claro;
+        .redesNosotros {
+            display: flex;
+            align-items: center;
+            justify-content:space-around;
+            font-size: 2rem;
+            a { 
+                @each $name, $color in $colors {
+                    &.color-#{$name} {color:$color;       
+                        &:hover {
+                        color: darken($color, 25%);
+                    }
+                    }
+                }
             }
         }
     }

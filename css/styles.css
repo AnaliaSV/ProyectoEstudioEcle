@@ -320,25 +320,30 @@ h6 {
 
 .nosotrosTitulo {
   margin-top: 3rem;
-  text-align: center; }
+  text-align: center;
+  color: #6A67CE; }
 
-.redesNosotros {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  font-size: 2rem; }
-  .redesNosotros a.color-violeta {
-    color: #6A67CE; }
-    .redesNosotros a.color-violeta:hover {
-      color: #2f2c89; }
-  .redesNosotros a.color-violeta-claro {
-    color: #CECCFF; }
-    .redesNosotros a.color-violeta-claro:hover {
-      color: #544dff; }
-  .redesNosotros a.color-verde {
-    color: #2ABFCA; }
-    .redesNosotros a.color-verde:hover {
-      color: #145b60; }
+.card-nosotros {
+  border: 2px solid #6A67CE; }
+  .card-nosotros .card-footer {
+    background-color: #CECCFF; }
+    .card-nosotros .card-footer .redesNosotros {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      font-size: 2rem; }
+      .card-nosotros .card-footer .redesNosotros a.color-violeta {
+        color: #6A67CE; }
+        .card-nosotros .card-footer .redesNosotros a.color-violeta:hover {
+          color: #2f2c89; }
+      .card-nosotros .card-footer .redesNosotros a.color-violeta-claro {
+        color: #CECCFF; }
+        .card-nosotros .card-footer .redesNosotros a.color-violeta-claro:hover {
+          color: #544dff; }
+      .card-nosotros .card-footer .redesNosotros a.color-verde {
+        color: #2ABFCA; }
+        .card-nosotros .card-footer .redesNosotros a.color-verde:hover {
+          color: #145b60; }
 
 /*PORTFOLIO*/
 .galeria {
@@ -389,7 +394,22 @@ h6 {
   .servicios div ul {
     list-style: none; }
 
-/*combos .card en index, linea 164*/
+.serviciosCombos .card.color-violeta {
+  border: 3px solid #6A67CE;
+  background-color: #f6f6fc; }
+
+.serviciosCombos .card.color-violeta-claro {
+  border: 3px solid #CECCFF;
+  background-color: #f6f6fc; }
+
+.serviciosCombos .card.color-verde {
+  border: 3px solid #2ABFCA;
+  background-color: #f6f6fc; }
+
+.serviciosCombos .card .serviciosCombosTitle {
+  font-weight: bold;
+  color: #6A67CE; }
+
 /*CONTACTO*/
 .containerForm {
   background-color: #E6E7E8;

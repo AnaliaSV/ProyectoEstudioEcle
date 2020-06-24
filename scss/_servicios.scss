@@ -29,5 +29,16 @@
         }  
     } 
 }
-/*combos .card en index, linea 164*/
 
+.serviciosCombos {
+    .card {
+        @each $name, $color in $colors {
+            &.color-#{$name} {
+            @include oscuridad($color);}
+        }
+        .serviciosCombosTitle {
+            font-weight: bold;
+            color: $violeta;
+        }
+    }
+} 
