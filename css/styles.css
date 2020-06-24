@@ -21,7 +21,6 @@ h4 {
   font-family: "magra"; }
 
 a {
-  text-transform: uppercase;
   text-decoration: none; }
   a:hover {
     text-decoration: none; }
@@ -29,7 +28,7 @@ a {
 body {
   position: relative;
   padding-bottom: 200px;
-  padding-top: 200px;
+  padding-top: 150px;
   background-color: #F7F7F7;
   line-height: 1.7;
   font-family: 'Lato', sans-serif; }
@@ -85,6 +84,8 @@ h6 {
     border: 0px;
     font-weight: bold;
     line-height: 1.7; }
+  .navbar .navbar-nav a {
+    text-transform: uppercase; }
   .navbar .navbar-nav .nav-link {
     padding: 10px;
     border-radius: 15px;
@@ -179,7 +180,9 @@ h6 {
     text-align: center; }
     .color-white .container .comboIndex .card {
       border: 0;
-      text-align: center; }
+      text-align: center;
+      margin: auto;
+      height: 280px; }
       .color-white .container .comboIndex .card .iconCombo {
         font-size: 45px;
         padding-bottom: 5px;
@@ -339,9 +342,18 @@ h6 {
 
 /*PORTFOLIO*/
 .galeria {
-  padding: 15px; }
-  .galeria:hover {
+  padding: 15px;
+  border: 1px solid #2ABFCA; }
+  .galeria a:hover {
     opacity: 0.6; }
+  .galeria a .hover-card-galeria:hover {
+    background-color: red; }
+  .galeria .card-body .card-title {
+    color: #6A67CE; }
+  .galeria .card-body p {
+    color: #58595B; }
+  .galeria:hover {
+    border: 3px solid #6A67CE; }
 
 .row-cols-md-3 .modal {
   width: 100%;
@@ -352,6 +364,32 @@ h6 {
 .row-cols-md-3 > * {
   max-width: 100%; }
 
+/*SERVICIOS*/
+.servicios {
+  display: flex;
+  flex-direction: row;
+  padding: 50px;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .servicios .serviciosItem {
+    display: flex;
+    flex-direction: row;
+    padding: 20px; }
+    .servicios .serviciosItem .servicioI {
+      border-right: 3px solid #6A67CE;
+      height: 265px; }
+      .servicios .serviciosItem .servicioI .servicioIcon {
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        margin: auto;
+        justify-content: center;
+        width: 55px;
+        font-size: 40px; }
+  .servicios div ul {
+    list-style: none; }
+
+/*combos .card en index, linea 164*/
 /*CONTACTO*/
 .containerForm {
   background-color: #E6E7E8;
@@ -457,32 +495,6 @@ h6 {
       border: 2px solid #2ABFCA;
       color: white; }
 
-/*SERVICIOS*/
-.servicios {
-  display: flex;
-  flex-direction: row;
-  padding: 50px;
-  flex-wrap: wrap;
-  justify-content: center; }
-  .servicios .serviciosItem {
-    display: flex;
-    flex-direction: row;
-    padding: 20px; }
-    .servicios .serviciosItem .servicioI {
-      border-right: 3px solid #6A67CE;
-      height: 265px; }
-      .servicios .serviciosItem .servicioI .servicioIcon {
-        display: flex;
-        flex-direction: column;
-        height: 200px;
-        margin: auto;
-        justify-content: center;
-        width: 55px;
-        font-size: 40px; }
-  .servicios div ul {
-    list-style: none; }
-
-/*combos .card en index, linea 164*/
 /* FOOTER*/
 .blockquote {
   background-color: #6A67CE;
@@ -509,22 +521,27 @@ h6 {
   .nosotrosIndexTexto {
     max-width: 100%;
     margin-top: 1rem; }
-  .col-md-8 {
-    flex: 0 0 100%;
-    max-width: 100%; }
-  .nosotrosIndexImagen {
-    max-width: 100%;
-    flex-direction: column; }
-  .servicios {
-    flex-direction: column;
-    max-width: 100%;
-    align-items: center; }
-  .navbar-expand-lg {
-    justify-content: center; } }
+    .nosotrosIndexTexto .col-md-8 {
+      flex: 0 0 100%;
+      max-width: 100%; }
+    .nosotrosIndexTexto .nosotrosIndexImagen {
+      max-width: 100%;
+      flex-direction: column; }
+    .nosotrosIndexTexto .servicios {
+      flex-direction: column;
+      max-width: 100%;
+      align-items: center; }
+    .nosotrosIndexTexto .navbar-expand-lg {
+      justify-content: center; } }
 
 @media (max-width: 991px) {
   .navbar-expand-lg {
-    justify-content: space-between; } }
+    justify-content: space-between; }
+  .comboIndex .card-deck {
+    flex-direction: column;
+    flex-wrap: wrap; }
+    .comboIndex .card-deck .col-sm-4 {
+      max-width: 70%; } }
 
 @media (min-width: 991px) {
   .navbar-expand-lg {
@@ -549,3 +566,7 @@ h6 {
   .containerForm .flexFormContacto {
     flex-wrap: wrap;
     flex-direction: column; } }
+
+@media (min-width: 768px) {
+  .nosotrosIndex .col-md-8 {
+    max-width: 100%; } }

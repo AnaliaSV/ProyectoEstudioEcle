@@ -11,33 +11,43 @@
     .nosotrosIndexTexto {
          max-width: 100%;
          margin-top: 1rem;
-    }
-     .col-md-8 {
-         flex: 0 0 100%;
-         max-width: 100%;
-    }
-    .nosotrosIndexImagen {
-         max-width: 100%;
-         flex-direction: column;
-    }
-    .servicios {
-        flex-direction: column;
-        max-width: 100%;   
-        align-items: center;
-    }
-    .navbar-expand-lg{
-        justify-content: center;
+        
+        .col-md-8 {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+        .nosotrosIndexImagen {
+            max-width: 100%;
+            flex-direction: column;
+        }
+        .servicios {
+            flex-direction: column;
+            max-width: 100%;   
+            align-items: center;
+        }
+        .navbar-expand-lg {
+            justify-content: center;
+        }
     }
 }
 @media (max-width: 991px) {
     .navbar-expand-lg {
         justify-content: space-between;
     }
+    .comboIndex {
+        .card-deck {
+            flex-direction: column;
+            flex-wrap: wrap;
+            .col-sm-4 {
+                max-width: 70%;
+            }
+        }
+    }
 } 
 @media (min-width: 991px) {
     .navbar-expand-lg {
         justify-content: center;
-    }
+    }    
 }  
 
  @media (max-width:767px) {
@@ -71,3 +81,9 @@
 
 }
  
+@media (min-width: 768px) {
+    .nosotrosIndex {
+        .col-md-8 {
+    max-width: 100%;}
+    }
+}

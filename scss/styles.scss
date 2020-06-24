@@ -35,7 +35,7 @@ h4 {
     font-family:"magra";
 }
 a {
-    text-transform: uppercase;
+//    text-transform: uppercase;
     text-decoration: none;
     &:hover {
     text-decoration: none;
@@ -44,7 +44,7 @@ a {
 body {
     position: relative;
     padding-bottom: 200px;
-    padding-top: 200px;
+    padding-top: 150px;
     background-color:$gris-claro;
     line-height: 1.7;
     font-family: 'Lato', sans-serif;
@@ -70,11 +70,10 @@ body {
 @import "nosotros";
 // _portfolio.scss
 @import "portfolio";
-// _contacto.scss
-@import "contacto";
 // _servicios.scss
 @import "servicios";
-
+// _contacto.scss/ modal header
+@import "contacto";
 // _footer.scss
 @import "footer";
 // _responsive.scss

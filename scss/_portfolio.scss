@@ -1,9 +1,30 @@
 /*PORTFOLIO*/
-.galeria {
-    padding: 15px;
-     &:hover {
-    opacity: 0.6;}
-}
+
+    .galeria {
+        padding: 15px;
+        border: 1px solid $verde;
+        a {
+            &:hover{opacity: 0.6;}
+        .hover-card-galeria {
+            &:hover{
+                background-color: red;
+            }
+        }
+        }
+        .card-body {
+            .card-title {
+                color:$violeta;
+            }
+            p {
+                color:$gris-oscuro;
+            }
+        }
+        &:hover {
+        
+        border: 3px solid $violeta;
+    }
+    }
+
 .row-cols-md-3 {
     .modal {
         width: 100%;
