@@ -49,7 +49,7 @@ body {
     font-family: 'Lato', sans-serif;
 }
 @for $i from 1 through 6 {
-    h#{$i} {font-size: 5.3rem/$i;}
+    h#{$i} {font-size: 5.4rem/$i;}
 }
 .container {
     margin:auto;

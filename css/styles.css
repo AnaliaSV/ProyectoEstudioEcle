@@ -34,22 +34,22 @@ body {
   font-family: 'Lato', sans-serif; }
 
 h1 {
-  font-size: 5.3rem; }
+  font-size: 5.4rem; }
 
 h2 {
-  font-size: 2.65rem; }
+  font-size: 2.7rem; }
 
 h3 {
-  font-size: 1.76667rem; }
+  font-size: 1.8rem; }
 
 h4 {
-  font-size: 1.325rem; }
+  font-size: 1.35rem; }
 
 h5 {
-  font-size: 1.06rem; }
+  font-size: 1.08rem; }
 
 h6 {
-  font-size: 0.88333rem; }
+  font-size: 0.9rem; }
 
 .container {
   margin: auto; }
@@ -188,9 +188,6 @@ h6 {
         padding-bottom: 5px;
         text-align: center;
         color: #2ABFCA; }
-        .color-white .container .combo-index .card .icon-combo i {
-          color: #6A67CE;
-          padding-top: 10px; }
       .color-white .container .combo-index .card h4 {
         color: #2ABFCA;
         font-weight: bold;
@@ -214,21 +211,23 @@ h6 {
 .col-sm h3 {
   text-align: center; }
 
-.titulo-combos {
-  padding: 50px;
-  align-items: center;
-  text-align: center; }
-
 /*nosotros*/
-.nosotros-index-texto h3 {
-  padding-top: 1.5rem;
-  padding-bottom: 0.7rem;
-  color: #6A67CE; }
-
-.nosotros-index-texto p {
-  font-size: 18px; }
-  .nosotros-index-texto p strong {
-    font-size: 18px; }
+.nosotros-index {
+  margin-top: 6rem;
+  margin-bottom: 6rem; }
+  .nosotros-index .nosotros-index-texto {
+    border-radius: 15px;
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: white;
+    padding: 2rem 2.5rem;
+    margin-top: 2em;
+    margin-bottom: 2rem; }
+    .nosotros-index .nosotros-index-texto h2 {
+      color: #6A67CE; }
+    .nosotros-index .nosotros-index-texto h5 {
+      line-height: 1.7;
+      font-weight: bold;
+      font-size: 1.2rem; }
 
 .boton-izquierda {
   text-transform: uppercase;
@@ -296,27 +295,69 @@ h6 {
   box-shadow: 0 0 0 0.2rem #CECCFF; }
 
 /*combos*/
-.combos h3 {
-  text-align: center;
-  padding-bottom: 2rem;
-  color: #6A67CE;
-  font-weight: bold; }
-
-.combos .card.color-violeta {
-  border: 3px solid #6A67CE;
-  background-color: #f6f6fc; }
-
-.combos .card.color-violeta-claro {
-  border: 3px solid #CECCFF;
-  background-color: #f6f6fc; }
-
-.combos .card.color-verde {
-  border: 3px solid #2ABFCA;
-  background-color: #f6f6fc; }
-
-.combos .card .servicios-combos-title {
-  font-weight: bold;
-  color: #6A67CE; }
+.combos {
+  padding-top: 6rem;
+  padding-bottom: 8rem; }
+  .combos h2 {
+    text-align: center;
+    color: #6A67CE;
+    font-weight: bold;
+    margin-bottom: 2rem; }
+  .combos h5 {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 3rem; }
+  .combos .card.color-violeta {
+    border: 3px solid #6A67CE;
+    background-color: #f6f6fc; }
+  .combos .card.color-violeta-claro {
+    border: 3px solid #CECCFF;
+    background-color: #f6f6fc; }
+  .combos .card.color-verde {
+    border: 3px solid #2ABFCA;
+    background-color: #f6f6fc; }
+  .combos .card .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: #6A67CE;
+    transition: .5s ease;
+    border-radius: 100%; }
+  .combos .card:hover .overlay {
+    opacity: .8;
+    border-radius: 0;
+    height: auto;
+    width: 100%;
+    margin: auto;
+    transform-origin: center center;
+    color: transparent; }
+    .combos .card:hover .overlay .texto-combo-hover {
+      display: flex;
+      flex-direction: row;
+      color: white;
+      align-items: center;
+      justify-content: right;
+      margin-top: 16rem; }
+      .combos .card:hover .overlay .texto-combo-hover h4 {
+        font-family: "magra";
+        text-align: center;
+        margin-bottom: 0;
+        color: white;
+        margin-right: 0.5rem; }
+      .combos .card:hover .overlay .texto-combo-hover i {
+        padding-right: 1rem;
+        color: #4dd0da;
+        font-size: 3rem;
+        line-height: 0; }
+  .combos .card .imagen-combo-hover {
+    display: block;
+    width: 100%;
+    height: auto; }
 
 .nosotros-titulo {
   margin-top: 3rem;
@@ -395,6 +436,11 @@ h6 {
         font-size: 40px; }
   .servicios div ul {
     list-style: none; }
+
+.titulo-combos {
+  padding: 50px;
+  align-items: center;
+  text-align: center; }
 
 .servicios-combos .card.color-violeta {
   border: 3px solid #6A67CE;
