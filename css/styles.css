@@ -328,7 +328,8 @@ h6 {
     opacity: 0;
     background-color: #6A67CE;
     transition: .5s ease;
-    border-radius: 100%; }
+    border-radius: 100%;
+    color: transparent; }
   .combos .card:hover .overlay {
     opacity: .8;
     border-radius: 0;
@@ -401,63 +402,67 @@ h6 {
   .nosotros .nosotros-imagen .img-fluid {
     border-radius: 15px; }
 
-.habilidades-titulo {
-  margin-top: 4rem;
-  margin-bottom: 1rem;
-  color: #6A67CE;
-  text-align: center; }
+.habilidades-padding {
+  padding-top: 1rem;
+  padding-bottom: 4rem; }
+  .habilidades-padding .habilidades-titulo {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    color: #6A67CE;
+    text-align: center; }
 
-.row-habilidades .habilidades-left {
-  margin-top: 2rem;
-  margin-left: 2rem; }
-  .row-habilidades .habilidades-left .grid-lista-nosotros {
-    display: grid;
-    grid-template-columns: repeat(6, auto);
-    grid-auto-rows: 3rem;
+.row-habilidades {
+  justify-content: space-around; }
+  .row-habilidades .habilidades-left {
+    margin-top: 2rem;
+    margin-left: 2rem; }
+    .row-habilidades .habilidades-left .grid-lista-nosotros {
+      display: grid;
+      grid-template-columns: repeat(6, auto);
+      grid-auto-rows: 3rem;
+      margin: auto;
+      grid-gap: 13px; }
+      .row-habilidades .habilidades-left .grid-lista-nosotros .lista-grid {
+        grid-column-start: 2;
+        grid-column-end: 7;
+        display: flex;
+        justify-content: start;
+        text-align: center;
+        align-items: center;
+        font-size: 1rem;
+        font-weight: bold; }
+      .row-habilidades .habilidades-left .grid-lista-nosotros .lista-grid-numeracion {
+        font-weight: bold;
+        display: flex;
+        font-size: 1.1rem;
+        justify-content: center;
+        color: white;
+        text-align: center;
+        align-items: center;
+        font-weight: bold; }
+        .row-habilidades .habilidades-left .grid-lista-nosotros .lista-grid-numeracion .div-verde {
+          background-color: #2ABFCA;
+          width: 2rem; }
+  .row-habilidades .habilidades-right {
     margin: auto;
-    grid-gap: 13px; }
-    .row-habilidades .habilidades-left .grid-lista-nosotros .lista-grid {
-      grid-column-start: 2;
-      grid-column-end: 7;
-      display: flex;
-      justify-content: start;
-      text-align: center;
-      align-items: center;
-      font-size: 1rem;
-      font-weight: bold; }
-    .row-habilidades .habilidades-left .grid-lista-nosotros .lista-grid-numeracion {
-      font-weight: bold;
-      display: flex;
-      font-size: 1.1rem;
-      justify-content: center;
-      color: white;
-      text-align: center;
-      align-items: center;
-      font-weight: bold; }
-      .row-habilidades .habilidades-left .grid-lista-nosotros .lista-grid-numeracion .div-verde {
-        background-color: #2ABFCA;
-        width: 2rem; }
-
-.row-habilidades .habilidades-right {
-  margin: auto;
-  margin-top: 2rem; }
-  .row-habilidades .habilidades-right .card-deck .card {
-    margin-bottom: 30px;
-    margin-left: 20px;
-    margin-right: 20px; }
-  .row-habilidades .habilidades-right .card-deck .card-habilidades {
-    border: 3px solid #2ABFCA;
-    width: 200px;
-    height: 200px; }
-    .row-habilidades .habilidades-right .card-deck .card-habilidades .card-body .card-title {
-      font-size: 4rem;
-      color: #2ABFCA;
-      text-align: center; }
-    .row-habilidades .habilidades-right .card-deck .card-habilidades .card-text {
-      font-size: 1.1rem;
-      font-weight: bold;
-      text-align: center;
-      line-height: 1.1; }
+    margin-top: 2rem; }
+    .row-habilidades .habilidades-right .card-deck .card {
+      margin-bottom: 30px;
+      margin-left: 20px;
+      margin-right: 20px; }
+    .row-habilidades .habilidades-right .card-deck .card-habilidades {
+      border: 3px solid #2ABFCA;
+      width: 200px;
+      height: 200px; }
+      .row-habilidades .habilidades-right .card-deck .card-habilidades .card-body .card-title {
+        font-size: 4rem;
+        color: #2ABFCA;
+        text-align: center; }
+      .row-habilidades .habilidades-right .card-deck .card-habilidades .card-text {
+        font-size: 1.1rem;
+        font-weight: bold;
+        text-align: center;
+        line-height: 1.1; }
 
 /*PORTFOLIO*/
 .galeria {
