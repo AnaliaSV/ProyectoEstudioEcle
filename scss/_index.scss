@@ -8,7 +8,7 @@
 .color-white {
     background-color: white;  
     .container {
-        .combo-index {
+        .ideas-index {
             padding-bottom: 3rem;
             padding-top: 3rem;
             text-align: center;
@@ -16,7 +16,7 @@
                 border:0 ;text-align: center;
                 margin: auto;
                 height: 280px;
-                .icon-combo {
+                .icon-ideas {
                     font-size: 45px;
                     padding-bottom: 5px;
                     text-align: center; 
@@ -93,7 +93,7 @@
 }
 .btn {
     border-radius: 15rem;
-    border: 3px solid; 
+    border: 3px solid $verde; 
 }
 .btn-outline-success {
       border-color: $verde;
@@ -128,8 +128,8 @@
 
 /*combos*/
 .combos {
-   padding-top: 6rem;
-   padding-bottom:8rem;
+   padding-top: 4rem;
+   padding-bottom:6rem;
     h2 {
        text-align: center;
         color: $violeta;

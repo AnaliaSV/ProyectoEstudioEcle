@@ -1,17 +1,17 @@
 /*RESPONSIVE*/
-@media (min-width: 576px) and (max-width:1200px) {
+@media (min-width: 576px) and (max-width:1199px) {
+    //header
+    .navbar-expand-lg {
+        justify-content: center;
+    }
+    // index.html
     .nosotros-index {
-         flex-direction: column;
+        flex-direction: column;
          max-width: 100%;                
-    }
-    .servicios-container {
-            flex-direction: column;
-            max-width: 100%;    
-    }
-    .nosotros-index-texto {
-         max-width: 100%;
-         margin-top: 1rem;
-        
+        .nosotros-index-texto {
+            max-width: 100%;
+            margin-top: 1rem;
+        }    
         .col-md-8 {
             flex: 0 0 100%;
             max-width: 100%;
@@ -20,28 +20,36 @@
             max-width: 100%;
             flex-direction: column;
         }
-        .servicios {
-            flex-direction: column;
-            max-width: 100%;   
-            align-items: center;
+    }
+    //nosotros.html
+    .nosotros {
+        flex-direction: column;
+        max-width: 100%; 
+         .nosotros-texto {
+        max-width: 100%;
+        margin-top: 1rem;
         }
-        .navbar-expand-lg {
-            justify-content: center;
+       
+        .col-md-8 {
+           flex: 0 0 100%;
+           max-width: 100%;
         }
+        .nosotros-imagen {
+           max-width: 100%;
+           flex-direction: column;
+        }
+    }
+    //servicios.html   
+    .servicios {
+        flex-direction: column;
+        max-width: 100%;   
+        align-items: center;
     }
 }
 @media (max-width: 991px) {
+    // header 
     .navbar-expand-lg {
         justify-content: space-between;
-    }
-    .combo-index {
-        .card-deck {
-            flex-direction: column;
-            flex-wrap: wrap;
-            .col-sm-4 {
-                max-width: 70%;
-            }
-        }
     }
     .navbar { 
         .navbar-nav{
@@ -52,30 +60,108 @@
         }     
     
     }
+    // index.html
+    .container {
+        .ideas-index {
+            .card-deck {
+                flex-direction: column;
+                flex-wrap: wrap;
+                .col-sm-4 {
+                    max-width: 70%;
+                }
+            }
+        }
+    }
+    // index.html combos hover    
+    .combos {
+        .card-group {
+            .card-deck {
+                .card {
+                    &:hover {
+                        .overlay {
+                            .texto-combo-hover {
+                                margin-top: 6rem;
+                            }  
+                        }      
+                    }    
+                }
+            }
+        }
+    }
+  
+// nosotros.html
+    .row-habilidades {
+        flex-direction: column;
+    }
+    .col-6-habilidades-right {
+        max-width: 100%;
+    }
+    .col-4-habilidades-left {
+        max-width: 60%;
+        margin:auto;
+    }
 } 
+
 @media (min-width: 991px) {
+    // header
     .navbar-expand-lg {
-        justify-content: center;
-    }  
+        justify-content: space-between;
+    }
+    // index.html combos hover    
+    .combos {
+        .card-group {
+            .card-deck {
+                .card {
+                    &:hover {
+                        .overlay {
+                            .texto-combo-hover {
+                                margin-top: 8rem;
+                            }  
+                        }      
+                            
+                    }    
+                }
+            }
+        }
+    }
 }  
 
  @media (max-width:767px) {
-    .card-deck { 
-        flex-direction: column; 
-        .card {
-            margin-bottom: 1rem;
-         }    
+    // header 
+    .navbar-expand-lg {
+        justify-content: center;
+    } 
+   // index.html  
+    .ideas-index {
+        .card-deck { 
+            flex-direction: column; 
+            .col-sm-4  {
+                margin-bottom: 1rem;
+                max-width: 100%;
+            }    
+        }
     }
-    .combo-index {
-        flex-direction: column; 
-        .col-sm-4 {
-            max-width: 100%;
-         }
+    // index.html combos
+    .combos {
+        .card-group {
+            .card-deck {
+                flex-direction: column;
+                max-width: 100%;
+                .card {
+                    margin-bottom: 1rem;
+                    &:hover {
+                        .overlay {
+                            .texto-combo-hover {
+                                margin-top: 15rem;
+                            }  
+                        }      
+                            
+                    }  
+                }
+            }
+        }
     }
-    .servicios-container {
-        flex-direction: column;
-        max-width: 100%;    
-    }
+    // servicios.html
     .servicios {
         flex-direction: column;
         max-width: 100%;  
@@ -88,11 +174,52 @@
         }
     }
 
+    // nosotros.html
+    .habilidades-right {
+        .card-deck {
+            flex-direction: row;
+        }
+    }
 }
  
 @media (min-width: 768px) {
+    // index.html
     .nosotros-index {
         .col-md-8 {
-    max-width: 100%;}
+        max-width: 100%;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    // nosotros.html   
+    .row-habilidades {
+            .habilidades-right {
+                .card-deck {
+                    .card-habilidades {
+                    width: auto;
+                    }
+                }
+            }
+        }
+        // index.html combos
+    .combos {
+        .card-group {
+            .card-deck {
+            flex-direction: column;
+            max-width: 100%;
+                .card {
+                    margin-bottom: 1rem;
+                    &:hover {
+                        .overlay {
+                            .texto-combo-hover {
+                                margin-top: 15rem;
+                            }  
+                        }      
+                            
+                    }                     
+                }
+            }
+        }
     }
 }

@@ -123,9 +123,10 @@ h6 {
 
 .navbar .navbar-toggler {
   background-color: #2ABFCA;
+  padding: 1rem;
   cursor: pointer; }
   .navbar .navbar-toggler span {
-    font-size: 3rem; }
+    font-size: 2rem; }
   .navbar .navbar-toggler.color-violeta {
     color: #6A67CE; }
     .navbar .navbar-toggler.color-violeta:hover, .navbar .navbar-toggler.color-violeta[aria-expanded="true"] {
@@ -174,31 +175,31 @@ h6 {
 /* servicios*/
 .color-white {
   background-color: white; }
-  .color-white .container .combo-index {
+  .color-white .container .ideas-index {
     padding-bottom: 3rem;
     padding-top: 3rem;
     text-align: center; }
-    .color-white .container .combo-index .card {
+    .color-white .container .ideas-index .card {
       border: 0;
       text-align: center;
       margin: auto;
       height: 280px; }
-      .color-white .container .combo-index .card .icon-combo {
+      .color-white .container .ideas-index .card .icon-ideas {
         font-size: 45px;
         padding-bottom: 5px;
         text-align: center;
         color: #2ABFCA; }
-      .color-white .container .combo-index .card h4 {
+      .color-white .container .ideas-index .card h4 {
         color: #2ABFCA;
         font-weight: bold;
         text-align: center;
         margin-bottom: 1rem;
         font-family: "magra"; }
-      .color-white .container .combo-index .card .line {
+      .color-white .container .ideas-index .card .line {
         border-top: 0.35rem solid #2ABFCA;
         margin: auto;
         width: 50px; }
-      .color-white .container .combo-index .card p {
+      .color-white .container .ideas-index .card p {
         line-height: 1.5;
         padding-top: .5rem;
         margin-left: 3rem;
@@ -245,7 +246,7 @@ h6 {
 
 .btn {
   border-radius: 15rem;
-  border: 3px solid; }
+  border: 3px solid #2ABFCA; }
 
 .btn-outline-success {
   border-color: #2ABFCA;
@@ -296,8 +297,8 @@ h6 {
 
 /*combos*/
 .combos {
-  padding-top: 6rem;
-  padding-bottom: 8rem; }
+  padding-top: 4rem;
+  padding-bottom: 6rem; }
   .combos h2 {
     text-align: center;
     color: #6A67CE;
@@ -359,34 +360,104 @@ h6 {
     width: 100%;
     height: auto; }
 
-.nosotros-titulo {
-  margin-top: 3rem;
-  text-align: center;
-  color: #6A67CE; }
+.nosotros {
+  justify-content: center; }
+  .nosotros .nosotros-texto {
+    border-radius: 15px;
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: white;
+    padding: 1rem 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    max-width: 100%; }
+    .nosotros .nosotros-texto h2 {
+      color: #6A67CE; }
+    .nosotros .nosotros-texto h5 {
+      line-height: 1.7;
+      font-weight: bold;
+      font-size: 1.2rem; }
+    .nosotros .nosotros-texto .nosotros-footer {
+      background-color: #fff;
+      border: 0; }
+      .nosotros .nosotros-texto .nosotros-footer .redes-nosotros {
+        display: flex;
+        align-items: center;
+        justify-content: space-around; }
+        .nosotros .nosotros-texto .nosotros-footer .redes-nosotros .redes-iconos {
+          border-radius: 15px;
+          padding-right: 20px;
+          padding-left: 15px;
+          padding-right: 15px; }
+          .nosotros .nosotros-texto .nosotros-footer .redes-nosotros .redes-iconos:hover {
+            background-color: #2ABFCA; }
+          .nosotros .nosotros-texto .nosotros-footer .redes-nosotros .redes-iconos div {
+            font-size: 2rem; }
+            .nosotros .nosotros-texto .nosotros-footer .redes-nosotros .redes-iconos div.color-violeta {
+              color: #6A67CE; }
+            .nosotros .nosotros-texto .nosotros-footer .redes-nosotros .redes-iconos div.color-violeta-claro {
+              color: #CECCFF; }
+            .nosotros .nosotros-texto .nosotros-footer .redes-nosotros .redes-iconos div.color-verde {
+              color: #2ABFCA; }
+  .nosotros .nosotros-imagen .img-fluid {
+    border-radius: 15px; }
 
-.card-nosotros {
-  border: 2px solid #6A67CE; }
-  .card-nosotros .card-body .card-title {
-    color: #6A67CE; }
-  .card-nosotros .card-footer {
-    background-color: #CECCFF; }
-    .card-nosotros .card-footer .redes-nosotros {
+.habilidades-titulo {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  color: #6A67CE;
+  text-align: center; }
+
+.row-habilidades .habilidades-left {
+  margin-top: 2rem;
+  margin-left: 2rem; }
+  .row-habilidades .habilidades-left .grid-lista-nosotros {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-auto-rows: 3rem;
+    margin: auto;
+    grid-gap: 13px; }
+    .row-habilidades .habilidades-left .grid-lista-nosotros .lista-grid {
+      grid-column-start: 2;
+      grid-column-end: 7;
       display: flex;
+      justify-content: start;
+      text-align: center;
       align-items: center;
-      justify-content: space-around;
-      font-size: 2rem; }
-      .card-nosotros .card-footer .redes-nosotros a.color-violeta {
-        color: #6A67CE; }
-        .card-nosotros .card-footer .redes-nosotros a.color-violeta:hover {
-          color: #2f2c89; }
-      .card-nosotros .card-footer .redes-nosotros a.color-violeta-claro {
-        color: #CECCFF; }
-        .card-nosotros .card-footer .redes-nosotros a.color-violeta-claro:hover {
-          color: #544dff; }
-      .card-nosotros .card-footer .redes-nosotros a.color-verde {
-        color: #2ABFCA; }
-        .card-nosotros .card-footer .redes-nosotros a.color-verde:hover {
-          color: #145b60; }
+      font-size: 1rem;
+      font-weight: bold; }
+    .row-habilidades .habilidades-left .grid-lista-nosotros .lista-grid-numeracion {
+      font-weight: bold;
+      display: flex;
+      font-size: 1.1rem;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      align-items: center;
+      font-weight: bold; }
+      .row-habilidades .habilidades-left .grid-lista-nosotros .lista-grid-numeracion .div-verde {
+        background-color: #2ABFCA;
+        width: 2rem; }
+
+.row-habilidades .habilidades-right {
+  margin: auto;
+  margin-top: 2rem; }
+  .row-habilidades .habilidades-right .card-deck .card {
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px; }
+  .row-habilidades .habilidades-right .card-deck .card-habilidades {
+    border: 3px solid #2ABFCA;
+    width: 200px;
+    height: 200px; }
+    .row-habilidades .habilidades-right .card-deck .card-habilidades .card-body .card-title {
+      font-size: 4rem;
+      color: #2ABFCA;
+      text-align: center; }
+    .row-habilidades .habilidades-right .card-deck .card-habilidades .card-text {
+      font-size: 1.1rem;
+      font-weight: bold;
+      text-align: center;
+      line-height: 1.1; }
 
 /*PORTFOLIO*/
 .galeria {
@@ -579,65 +650,101 @@ h6 {
   margin: 0px; }
 
 /*RESPONSIVE*/
-@media (min-width: 576px) and (max-width: 1200px) {
+@media (min-width: 576px) and (max-width: 1199px) {
+  .navbar-expand-lg {
+    justify-content: center; }
   .nosotros-index {
     flex-direction: column;
     max-width: 100%; }
-  .servicios-container {
-    flex-direction: column;
-    max-width: 100%; }
-  .nosotros-index-texto {
-    max-width: 100%;
-    margin-top: 1rem; }
-    .nosotros-index-texto .col-md-8 {
+    .nosotros-index .nosotros-index-texto {
+      max-width: 100%;
+      margin-top: 1rem; }
+    .nosotros-index .col-md-8 {
       flex: 0 0 100%;
       max-width: 100%; }
-    .nosotros-index-texto .nosotros-index-imagen {
+    .nosotros-index .nosotros-index-imagen {
       max-width: 100%;
       flex-direction: column; }
-    .nosotros-index-texto .servicios {
-      flex-direction: column;
+  .nosotros {
+    flex-direction: column;
+    max-width: 100%; }
+    .nosotros .nosotros-texto {
       max-width: 100%;
-      align-items: center; }
-    .nosotros-index-texto .navbar-expand-lg {
-      justify-content: center; } }
+      margin-top: 1rem; }
+    .nosotros .col-md-8 {
+      flex: 0 0 100%;
+      max-width: 100%; }
+    .nosotros .nosotros-imagen {
+      max-width: 100%;
+      flex-direction: column; }
+  .servicios {
+    flex-direction: column;
+    max-width: 100%;
+    align-items: center; } }
 
 @media (max-width: 991px) {
   .navbar-expand-lg {
     justify-content: space-between; }
-  .combo-index .card-deck {
-    flex-direction: column;
-    flex-wrap: wrap; }
-    .combo-index .card-deck .col-sm-4 {
-      max-width: 70%; }
   .navbar .navbar-nav .btn {
     display: flex;
-    justify-content: start; } }
+    justify-content: start; }
+  .container .ideas-index .card-deck {
+    flex-direction: column;
+    flex-wrap: wrap; }
+    .container .ideas-index .card-deck .col-sm-4 {
+      max-width: 70%; }
+  .combos .card-group .card-deck .card:hover .overlay .texto-combo-hover {
+    margin-top: 6rem; }
+  .row-habilidades {
+    flex-direction: column; }
+  .col-6-habilidades-right {
+    max-width: 100%; }
+  .col-4-habilidades-left {
+    max-width: 60%;
+    margin: auto; } }
 
 @media (min-width: 991px) {
   .navbar-expand-lg {
-    justify-content: center; } }
+    justify-content: space-between; }
+  .combos .card-group .card-deck .card:hover .overlay .texto-combo-hover {
+    margin-top: 8rem; } }
 
 @media (max-width: 767px) {
-  .card-deck {
+  .navbar-expand-lg {
+    justify-content: center; }
+  .ideas-index .card-deck {
     flex-direction: column; }
-    .card-deck .card {
-      margin-bottom: 1rem; }
-  .combo-index {
-    flex-direction: column; }
-    .combo-index .col-sm-4 {
+    .ideas-index .card-deck .col-sm-4 {
+      margin-bottom: 1rem;
       max-width: 100%; }
-  .servicios-container {
+  .combos .card-group .card-deck {
     flex-direction: column;
     max-width: 100%; }
+    .combos .card-group .card-deck .card {
+      margin-bottom: 1rem; }
+      .combos .card-group .card-deck .card:hover .overlay .texto-combo-hover {
+        margin-top: 15rem; }
   .servicios {
     flex-direction: column;
     max-width: 100%;
     align-items: center; }
   .container-form .flex-form-contacto {
     flex-wrap: wrap;
-    flex-direction: column; } }
+    flex-direction: column; }
+  .habilidades-right .card-deck {
+    flex-direction: row; } }
 
 @media (min-width: 768px) {
   .nosotros-index .col-md-8 {
     max-width: 100%; } }
+
+@media (max-width: 576px) {
+  .row-habilidades .habilidades-right .card-deck .card-habilidades {
+    width: auto; }
+  .combos .card-group .card-deck {
+    flex-direction: column;
+    max-width: 100%; }
+    .combos .card-group .card-deck .card {
+      margin-bottom: 1rem; }
+      .combos .card-group .card-deck .card:hover .overlay .texto-combo-hover {
+        margin-top: 15rem; } }
