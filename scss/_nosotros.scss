@@ -49,16 +49,10 @@
         }            
     }
 }
-.habilidades-padding {
-    padding-top: 1rem;
-    padding-bottom:4rem;
-    .habilidades-titulo {
-        margin-top: 4rem;
-        margin-bottom: 2rem;
-        color: $violeta;
-        text-align: center;
-    }
-}     
+
+.habilidades-titulo {
+    text-align: center;
+    }     
 .row-habilidades {
     justify-content: space-around;
      .habilidades-left {

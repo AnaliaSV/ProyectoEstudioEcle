@@ -41,7 +41,8 @@
     }
     //servicios.html   
     .servicios {
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         max-width: 100%;   
         align-items: center;
     }
@@ -100,7 +101,19 @@
         max-width: 60%;
         margin:auto;
     }
-} 
+
+// servicios.html
+    .press-online {
+        flex-direction: column !important;
+        align-items: center;
+        .press-online-texto {
+            .card-press-online {
+                border-radius:15px;
+                box-shadow: 4px 4px 8px 0 rgba(0,0,0,.2);
+            }
+        }    
+    }
+}    
 
 @media (min-width: 991px) {
     // header

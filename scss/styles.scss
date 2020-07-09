@@ -24,6 +24,7 @@
 h2 {
     font-family:"magra";
     text-transform: uppercase;
+    color:$violeta; 
 }
 
 h3 {
@@ -53,6 +54,13 @@ body {
 }
 .container {
     margin:auto;
+}
+
+.color-white {
+    background-color: white;
+    padding-top: 4rem;
+    padding-bottom:6rem; 
+
 }
 .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
     padding-left: .5rem;
