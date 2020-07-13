@@ -1,10 +1,27 @@
 /*INDEX*/
 /*carrousel*/
-/*.carousel-inner {
-    
-    margin: auto; 
-}*/
+
+section {
+    .carousel-index {
+        .carousel-item {
+            .carousel-texto {
+                text-align: start;
+                width: 30rem;
+                background-color:White;
+                box-shadow: 4px 4px 8px 0 rgba(0,0,0,.2);
+                padding: 3rem 4rem 3rem 4rem;
+                border-radius: 15px;
+                margin-bottom: 8rem;
+                p {
+                    color: $verde;
+                }
+            }
+        }
+    }
+}
+
 /* servicios*/
+
 .color-white { 
     .container {
         .ideas-index {
@@ -133,66 +150,138 @@
         font-weight: bold;
         margin-bottom: 2rem;
     }
-    p {text-align: center; 
+    p {
+        text-align: center; 
         font-size: 1.2rem;
         margin-bottom: 3rem;
     }
-    .card {
-        @each $name, $color in $colors {
-            &.color-#{$name} {
-            @include oscuridad($color);}
-        }
-        .overlay {
-            position:absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 100%;
+    .card-group {
+        .modal {
             width: 100%;
-            opacity: 0;
-            background-color: $violeta;
-            transition: .5s ease;
-            border-radius:100%;
-            color: transparent;
-        }
-        &:hover {
-            .overlay {
-                opacity:.8;
-                border-radius:0;
-                height: auto;
-                width: 100%;
-                margin: auto;
-                transform-origin: center center;
-                color: transparent;
-                .texto-combo-hover {
-                    display: flex;
-                    flex-direction: row;
-                    color: white;
-                    align-items: center;
-                    justify-content:right;
-                    margin-top: 16rem;
-                    h4 {
-                        font-family: "magra";
-                        text-align:center ;
-                        margin-bottom: 0;
-                        color: lighten(white, 10%);
-                        margin-right: 0.5rem;
+            height: 100%;
+            .modal-dialog {
+                margin:1.75rem auto;
+                .modal-content {
+                    .modal-header {
+                        background-color:$verde;
+                        .modal-title {
+                            font-weight: bold;
+                        }
                     }
-                    i {
-                        padding-right:1rem ;
-                        color: lighten($verde, 10%);
-                        font-size: 3rem;
-                        line-height:0;
+                    .modal-body {
+                        padding: 2rem 2rem 0rem 2rem ;
+                        h2 {
+                            text-align:start;
+                            margin-bottom:.5rem;
+                        }
+                        .lead {
+                            font-size:1.2rem ;
+                            font-weight: bold;
+                            color: $verde;
+                            text-align:start;
+                            margin-bottom: 1rem;
+                        }
+                        p {
+                            text-align:start;
+                        }
+                        .texto-modal {
+                            display: grid;
+                            grid-gap: 5px;
+                            justify-content: center;
+                            grid-template-columns: repeat(12,50px);
+                            width: 700px;                    
+                            .numer-grid-model {
+                                width: 20px;
+                                color: $verde;
+                                justify-self: end;
+                            }
+                            .texto-grid-model {
+                                grid-column: span 3;
+                                font-weight: bold;
+                            }
+                        }
+                        em {
+                            margin: auto;
+                        }
                     }
-                }
+                    .modal-footer {
+                        background-color:$gris-claro;
+                        .redes-portfolio {
+                            margin: auto;
+                            border-radius: 15px;
+                            padding-right:20px; 
+                            padding-left:15px;
+                            padding-right:15px;
+                            &:hover {
+                                background-color: $verde; 
+                            }
+                            div {
+                                font-size: 2rem;
+                                @each $name, $color in $colors {
+                                    &.color-#{$name} {color:$color;       
+                                    }
+                                }
+                            }
+                        } 
+                    }
+                }    
             }
         }
-         .imagen-combo-hover {
-            display: block;
-            width: 100%;
-            height: auto;
+        .card {
+            @each $name, $color in $colors {
+                &.color-#{$name} {
+                @include oscuridad($color);}
+            }
+            .overlay-index {
+                position:absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 0;
+                background-color: $violeta;
+                transition: .5s ease;
+                border-radius:100%;
+                color: transparent;
+                &:hover {
+                        opacity:.8;
+                        border-radius:0;
+                        height: auto;
+                        width: 100%;
+                        margin: auto;
+                        transform-origin: center center;
+                        color: transparent;
+                        .texto-combo-hover {
+                            display: flex;
+                            flex-direction: row;
+                            color: white;
+                            align-items: center;
+                            justify-content:right;
+                            margin-top: 16rem;
+                            h4 {
+                                font-family: "magra";
+                                text-align:center ;
+                                margin-bottom: 0;
+                                color: lighten(white, 10%);
+                                margin-right: 0.5rem;
+                            }
+                            i {
+                                padding-right:1rem ;
+                                color: lighten($verde, 10%);
+                                font-size: 3rem;
+                                line-height:0;
+                            }
+                        }
+                }
+            }
+            .imagen-combo {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
         }
-        
-   }
+    }    
+
 }

@@ -21,6 +21,23 @@
     color:$violeta;
     border: $border;
 }
+//Carrousel color Arrows
+.color-icon {
+    color: $gris-oscuro;
+    font-size: 3rem;
+    &:hover {
+        color: black;
+    } 
+    &:focus {
+        color: $verde;
+    } 
+}
+
+.bold-color {
+    color: $violeta;
+    font-weight: bold;
+}
+
 h2 {
     font-family:"magra";
     text-transform: uppercase;
@@ -59,9 +76,10 @@ body {
 .color-white {
     background-color: white;
     padding-top: 4rem;
-    padding-bottom:6rem; 
-
+    padding-bottom:6rem;
 }
+
+
 .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
     padding-left: .5rem;
     color: rgba(0, 0, 0, 0.9);

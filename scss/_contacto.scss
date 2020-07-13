@@ -79,10 +79,6 @@
             border:none;
         }
 }
-.terminos-y-condiciones {
-    padding-top:15px;
-}
-
 .limpiar-formulario {
     @include BotonForm (6px, $gris-claro,$violeta,2px solid #6A67CE);
     cursor: pointer;
