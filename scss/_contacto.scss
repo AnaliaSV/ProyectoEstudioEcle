@@ -43,7 +43,6 @@
         padding:0.475rem 1rem;
     }
 }
-
 .telefono-form {
     background-color: rgba(106, 103, 206, 0.3);
     @include sizes(10px,5px, 15px, 10px);
@@ -73,14 +72,14 @@
 .textarea-form {
     background-color: rgba(106, 103, 206, 0.3);	
     @include sizes(10px,5px, 15px, 10px);
-        textarea {
-            border-radius:15px;
-            padding: 2px;
-            border:none;
-        }
+    textarea {
+        border-radius:15px;
+        padding: 2px;
+        border:none;
+    }
 }
 .limpiar-formulario {
-    @include BotonForm (6px, $gris-claro,$violeta,2px solid #6A67CE);
+    @include botonForm (10px, $gris-claro,$violeta,2px solid #6A67CE);
     cursor: pointer;
     border-radius: 150px;
     font-size: 12px;
@@ -92,17 +91,17 @@
     color:white;
     }
 } 
-.enviar-formulario {
-    @include BotonForm (6px,$gris-claro,$violeta,2px solid #6A67CE);
-    cursor: pointer;
-    border-radius: 150px;
-    font-size: 12px;
-    text-transform: uppercase;
-    
-    &:hover {
-    background-color: $verde; 
-    border: 2px solid $verde;
-    color:white;
-   }
-}
+    .enviar-formulario {
+        @include botonForm (10px,$gris-claro,$violeta,2px solid #6A67CE);
+        cursor: pointer;
+        border-radius: 150px;
+        font-size: 12px;
+        text-transform: uppercase;
+        
+        &:hover {
+        background-color: $verde; 
+        border: 2px solid $verde;
+        color:white;
+    }
+    }
 }

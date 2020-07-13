@@ -1,7 +1,7 @@
-//----------------------NOSOTROS----------------------//
-.nosotros {
+//----------------------SOBREMI----------------------//
+.sobremi {
     justify-content: center;
-    .nosotros-texto {
+    .sobremi-texto {
         border-radius: 15px;
         box-shadow: 4px 4px 8px 0 rgba(0,0,0,.2);
         background-color: white;
@@ -17,10 +17,10 @@
             font-weight: bold;
             font-size: 1.2rem;
         }
-        .nosotros-footer {
+        .sobremi-footer {
             background-color: #fff;
             border:0;
-            .redes-nosotros {
+            .redes-sobremi {
                 display: flex;
                 align-items: center;
                 justify-content:space-around;
@@ -43,7 +43,7 @@
             }
         }
     }
-    .nosotros-imagen {
+    .sobremi-imagen {
         .img-fluid {
             border-radius: 15px;
         }            
@@ -58,7 +58,7 @@
      .habilidades-left {
          margin-top:2rem ;
         margin-left: 2rem;
-        .grid-lista-nosotros {
+        .grid-lista-sobremi {
             display: grid;
             grid-template-columns: repeat(6,auto);
             grid-auto-rows:3rem;

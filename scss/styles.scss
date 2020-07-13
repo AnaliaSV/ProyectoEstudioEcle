@@ -15,7 +15,7 @@
    border-radius: $borderR;
    padding: $padding;
 }
-@mixin BotonForm ($paddingBtn, $gris-claro,$violeta,$border) {
+@mixin botonForm ($paddingBtn, $gris-claro,$violeta,$border) {
     padding:$paddingBtn;
     background-color:$gris-claro;
     color:$violeta;
@@ -79,7 +79,6 @@ body {
     padding-bottom:6rem;
 }
 
-
 .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
     padding-left: .5rem;
     color: rgba(0, 0, 0, 0.9);
@@ -91,8 +90,8 @@ body {
 /* PÁGINAS */
 // _index.scss
 @import "index";
-// _nosotros.scss
-@import "nosotros";
+// _sobremi.scss
+@import "sobremi";
 // _portfolio.scss
 @import "portfolio";
 // _servicios.scss

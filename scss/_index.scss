@@ -71,11 +71,11 @@ section {
     }
 }
 
-/*nosotros*/
-.nosotros-index {
+/*sobremi*/
+.sobremi-index {
     margin-top: 6rem;
     margin-bottom: 6rem;
-    .nosotros-index-texto {
+    .sobremi-index-texto {
         border-radius: 15px;
         box-shadow: 4px 4px 8px 0 rgba(0,0,0,.2);
         background-color: white;
@@ -246,7 +246,7 @@ section {
                 border-radius:100%;
                 color: transparent;
                 &:hover {
-                        opacity:.8;
+                        opacity:.9;
                         border-radius:0;
                         height: auto;
                         width: 100%;

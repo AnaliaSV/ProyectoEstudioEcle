@@ -118,6 +118,9 @@ h6 {
       background-color: #2ABFCA;
       box-shadow: 0 2px #666;
       transform: translateY(2px); }
+    .navbar .navbar-nav .nav-link:focus {
+      color: white;
+      background-color: #2ABFCA; }
     .navbar .navbar-nav .nav-link.color-violeta-claro {
       background-color: #CECCFF; }
     .navbar .navbar-nav .nav-link:hover, .navbar .navbar-nav .nav-link[aria-expanded="true"] {
@@ -128,6 +131,9 @@ h6 {
       background-color: #2ABFCA;
       box-shadow: 0 2px #666;
       transform: translateY(2px); }
+    .navbar .navbar-nav .nav-link:focus {
+      color: white;
+      background-color: #2ABFCA; }
     .navbar .navbar-nav .nav-link.color-verde {
       background-color: #2ABFCA; }
     .navbar .navbar-nav .nav-link:hover, .navbar .navbar-nav .nav-link[aria-expanded="true"] {
@@ -138,6 +144,9 @@ h6 {
       background-color: #2ABFCA;
       box-shadow: 0 2px #666;
       transform: translateY(2px); }
+    .navbar .navbar-nav .nav-link:focus {
+      color: white;
+      background-color: #2ABFCA; }
 
 .navbar .navbar-toggler {
   background-color: #2ABFCA;
@@ -235,20 +244,20 @@ section .carousel-index .carousel-item .carousel-texto {
 .col-sm h3 {
   text-align: center; }
 
-/*nosotros*/
-.nosotros-index {
+/*sobremi*/
+.sobremi-index {
   margin-top: 6rem;
   margin-bottom: 6rem; }
-  .nosotros-index .nosotros-index-texto {
+  .sobremi-index .sobremi-index-texto {
     border-radius: 15px;
     box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
     background-color: white;
     padding: 2rem 2.5rem;
     margin-top: 2em;
     margin-bottom: 2rem; }
-    .nosotros-index .nosotros-index-texto h2 {
+    .sobremi-index .sobremi-index-texto h2 {
       color: #6A67CE; }
-    .nosotros-index .nosotros-index-texto h5 {
+    .sobremi-index .sobremi-index-texto h5 {
       line-height: 1.7;
       font-weight: bold;
       font-size: 1.2rem; }
@@ -412,7 +421,7 @@ section .carousel-index .carousel-item .carousel-texto {
   border-radius: 100%;
   color: transparent; }
   .combos .card-group .card .overlay-index:hover {
-    opacity: .8;
+    opacity: .9;
     border-radius: 0;
     height: auto;
     width: 100%;
@@ -443,9 +452,9 @@ section .carousel-index .carousel-item .carousel-texto {
   width: 100%;
   height: auto; }
 
-.nosotros {
+.sobremi {
   justify-content: center; }
-  .nosotros .nosotros-texto {
+  .sobremi .sobremi-texto {
     border-radius: 15px;
     box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
     background-color: white;
@@ -453,35 +462,35 @@ section .carousel-index .carousel-item .carousel-texto {
     margin-top: 3rem;
     margin-bottom: 3rem;
     max-width: 100%; }
-    .nosotros .nosotros-texto h2 {
+    .sobremi .sobremi-texto h2 {
       color: #6A67CE; }
-    .nosotros .nosotros-texto h5 {
+    .sobremi .sobremi-texto h5 {
       line-height: 1.7;
       font-weight: bold;
       font-size: 1.2rem; }
-    .nosotros .nosotros-texto .nosotros-footer {
+    .sobremi .sobremi-texto .sobremi-footer {
       background-color: #fff;
       border: 0; }
-      .nosotros .nosotros-texto .nosotros-footer .redes-nosotros {
+      .sobremi .sobremi-texto .sobremi-footer .redes-sobremi {
         display: flex;
         align-items: center;
         justify-content: space-around; }
-        .nosotros .nosotros-texto .nosotros-footer .redes-nosotros .redes-iconos {
+        .sobremi .sobremi-texto .sobremi-footer .redes-sobremi .redes-iconos {
           border-radius: 15px;
           padding-right: 20px;
           padding-left: 15px;
           padding-right: 15px; }
-          .nosotros .nosotros-texto .nosotros-footer .redes-nosotros .redes-iconos:hover {
+          .sobremi .sobremi-texto .sobremi-footer .redes-sobremi .redes-iconos:hover {
             background-color: #2ABFCA; }
-          .nosotros .nosotros-texto .nosotros-footer .redes-nosotros .redes-iconos div {
+          .sobremi .sobremi-texto .sobremi-footer .redes-sobremi .redes-iconos div {
             font-size: 2rem; }
-            .nosotros .nosotros-texto .nosotros-footer .redes-nosotros .redes-iconos div.color-violeta {
+            .sobremi .sobremi-texto .sobremi-footer .redes-sobremi .redes-iconos div.color-violeta {
               color: #6A67CE; }
-            .nosotros .nosotros-texto .nosotros-footer .redes-nosotros .redes-iconos div.color-violeta-claro {
+            .sobremi .sobremi-texto .sobremi-footer .redes-sobremi .redes-iconos div.color-violeta-claro {
               color: #CECCFF; }
-            .nosotros .nosotros-texto .nosotros-footer .redes-nosotros .redes-iconos div.color-verde {
+            .sobremi .sobremi-texto .sobremi-footer .redes-sobremi .redes-iconos div.color-verde {
               color: #2ABFCA; }
-  .nosotros .nosotros-imagen .img-fluid {
+  .sobremi .sobremi-imagen .img-fluid {
     border-radius: 15px; }
 
 .habilidades-titulo {
@@ -492,13 +501,13 @@ section .carousel-index .carousel-item .carousel-texto {
   .row-habilidades .habilidades-left {
     margin-top: 2rem;
     margin-left: 2rem; }
-    .row-habilidades .habilidades-left .grid-lista-nosotros {
+    .row-habilidades .habilidades-left .grid-lista-sobremi {
       display: grid;
       grid-template-columns: repeat(6, auto);
       grid-auto-rows: 3rem;
       margin: auto;
       grid-gap: 13px; }
-      .row-habilidades .habilidades-left .grid-lista-nosotros .lista-grid {
+      .row-habilidades .habilidades-left .grid-lista-sobremi .lista-grid {
         grid-column-start: 2;
         grid-column-end: 7;
         display: flex;
@@ -507,7 +516,7 @@ section .carousel-index .carousel-item .carousel-texto {
         align-items: center;
         font-size: 1rem;
         font-weight: bold; }
-      .row-habilidades .habilidades-left .grid-lista-nosotros .lista-grid-numeracion {
+      .row-habilidades .habilidades-left .grid-lista-sobremi .lista-grid-numeracion {
         font-weight: bold;
         display: flex;
         font-size: 1.1rem;
@@ -516,7 +525,7 @@ section .carousel-index .carousel-item .carousel-texto {
         text-align: center;
         align-items: center;
         font-weight: bold; }
-        .row-habilidades .habilidades-left .grid-lista-nosotros .lista-grid-numeracion .div-verde {
+        .row-habilidades .habilidades-left .grid-lista-sobremi .lista-grid-numeracion .div-verde {
           background-color: #2ABFCA;
           width: 2rem; }
   .row-habilidades .habilidades-right {
@@ -778,7 +787,7 @@ section .carousel-index .carousel-item .carousel-texto {
       padding: 2px;
       border: none; }
   .container-form .limpiar-formulario {
-    padding: 6px;
+    padding: 10px;
     background-color: #F7F7F7;
     color: #6A67CE;
     border: 2px solid #6A67CE;
@@ -791,7 +800,7 @@ section .carousel-index .carousel-item .carousel-texto {
       border: 2px solid #2ABFCA;
       color: white; }
   .container-form .enviar-formulario {
-    padding: 6px;
+    padding: 10px;
     background-color: #F7F7F7;
     color: #6A67CE;
     border: 2px solid #6A67CE;
@@ -833,28 +842,25 @@ section .carousel-index .carousel-item .carousel-texto {
     height: auto;
     margin-bottom: auto;
     padding: 2rem 3rem 2rem 3rem; }
-  .nosotros-index {
+  .sobremi-index {
     flex-direction: column;
     max-width: 100%; }
-    .nosotros-index .nosotros-index-texto {
+    .sobremi-index .sobremi-index-texto {
       max-width: 100%;
       margin-top: 1rem; }
-    .nosotros-index .col-md-8 {
+    .sobremi-index .col-md-8 {
       flex: 0 0 100%;
       max-width: 100%; }
-    .nosotros-index .nosotros-index-imagen {
-      max-width: 100%;
-      flex-direction: column; }
-  .nosotros {
+  .sobremi {
     flex-direction: column;
     max-width: 100%; }
-    .nosotros .nosotros-texto {
+    .sobremi .sobremi-texto {
       max-width: 100%;
       margin-top: 1rem; }
-    .nosotros .col-md-8 {
+    .sobremi .col-md-8 {
       flex: 0 0 100%;
       max-width: 100%; }
-    .nosotros .nosotros-imagen {
+    .sobremi .sobremi-imagen {
       max-width: 100%;
       flex-direction: column; }
   .servicios {
@@ -944,7 +950,7 @@ section .carousel-index .carousel-item .carousel-texto {
     font-size: 1.2rem; } }
 
 @media (min-width: 768px) {
-  .nosotros-index .col-md-8 {
+  .sobremi-index .col-md-8 {
     max-width: 100%; } }
 
 @media (max-width: 576px) {
