@@ -362,7 +362,7 @@ section .carousel-index .carousel-item .carousel-texto {
         .combos .card-group .modal .modal-dialog .modal-content .modal-body .texto-modal .numer-grid-model {
           width: 20px;
           color: #2ABFCA;
-          justify-self: end; }
+          justify-self: flex-end; }
         .combos .card-group .modal .modal-dialog .modal-content .modal-body .texto-modal .texto-grid-model {
           grid-column: span 3;
           font-weight: bold; }
