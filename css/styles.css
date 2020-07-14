@@ -2,13 +2,6 @@
 :root {
   font-size: 17px; }
 
-/*$marginB:10px;
-$marginR:5px;
-$borderR:15px;
-$padding:10px;
-$paddingBtn:6px;
-$border:2px solid #6A67CE;
-*/
 .color-icon {
   color: #58595B;
   font-size: 3rem; }
@@ -21,17 +14,32 @@ $border:2px solid #6A67CE;
   color: #6A67CE;
   font-weight: bold; }
 
+h1 {
+  font-family: "magra";
+  text-transform: uppercase;
+  color: #6A67CE;
+  font-size: 3rem; }
+
 h2 {
   font-family: "magra";
   text-transform: uppercase;
-  color: #6A67CE; }
+  color: #6A67CE;
+  font-size: 2.7rem; }
 
 h3 {
   font-family: "magra";
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-size: 1.8rem; }
 
 h4 {
-  font-family: "magra"; }
+  font-family: "magra";
+  font-size: 1.35rem; }
+
+h5 {
+  font-size: 1.08rem; }
+
+h6 {
+  font-size: 0.9rem; }
 
 a {
   text-decoration: none; }
@@ -45,24 +53,6 @@ body {
   background-color: #F7F7F7;
   line-height: 1.7;
   font-family: 'Lato', sans-serif; }
-
-h1 {
-  font-size: 5.4rem; }
-
-h2 {
-  font-size: 2.7rem; }
-
-h3 {
-  font-size: 1.8rem; }
-
-h4 {
-  font-size: 1.35rem; }
-
-h5 {
-  font-size: 1.08rem; }
-
-h6 {
-  font-size: 0.9rem; }
 
 .container {
   margin: auto; }
