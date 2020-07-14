@@ -425,7 +425,7 @@ section .carousel-index .carousel-item .carousel-texto {
       flex-direction: row;
       color: white;
       align-items: center;
-      justify-content: right;
+      justify-content: flex-end;
       margin-top: 16rem; }
       .combos .card-group .card .overlay-index:hover .texto-combo-hover h4 {
         font-family: "magra";
