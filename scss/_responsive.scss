@@ -86,6 +86,7 @@
         }
     }
 }
+
 @media (max-width: 991px) {
     // header 
     .navbar-expand-lg {
@@ -121,7 +122,8 @@
                 flex-direction: column;
                 flex-wrap: wrap;
                 .col-sm-4 {
-                    max-width: 70%;
+                    max-width: 100%;
+                    max-height: auto;
                 }
             }
         }
@@ -186,7 +188,40 @@
         }
 
     }
+    .modal-cckonex {
+        .modal-body {
+            .texto-modal {
+                .number-two {
+                    grid-row-start: 2;
+                    grid-row-end: 3;
+                    grid-column-start:1 ;
+                    grid-column-end:2 ;
+                }
+                .text-two {
+                    grid-row-start: 2;
+                    grid-row-end: 3;
+                    grid-column-start:2 ;
+                    grid-column-end:3 ;
+                }
+                .number-three {
+                    grid-row-start:3;
+                    grid-row-end: 4;
+                    grid-column-start:1 ;
+                    grid-column-end:2 ;
+                }
+                .text-three {
+                    grid-row-start: 3;
+                    grid-row-end: 4;
+                    grid-column-start:2 ;
+                    grid-column-end:3 ;
+                }
+                
+            }
+        }
+    }   
 }
+
+
 @media (min-width: 991px) {
     // header
     .navbar-expand-lg {
@@ -208,15 +243,16 @@
             }
         }
     }
-    
-
 }  
 
  @media (max-width:767px) {
     // header 
-    .navbar-expand-lg {
-        justify-content: center;
-    } 
+    .bg-color {
+        position: absolute;
+        .navbar-expand-lg {
+            justify-content: center;
+        } 
+    }    
    // index.html  
     .ideas-index {
         .card-deck { 
@@ -285,8 +321,7 @@
         }
 
     }
-}
- 
+ }
 @media (min-width: 768px) {
     // index.html
     .sobremi-index {
@@ -299,7 +334,7 @@
 @media (max-width: 576px) {
     // sobremi.html   
     .row-habilidades {
-            .habilidades-right {
+           .habilidades-right {
                 .card-deck {
                     .card-habilidades {
                     width: auto;
@@ -319,7 +354,7 @@
                         .overlay-index {
                             &:hover {
                                 .texto-combo-hover {
-                                    margin-top: 15rem;
+                                    margin-top: 8rem;
                                 }
                             } 
                         }      

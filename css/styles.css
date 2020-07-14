@@ -103,7 +103,8 @@ h6 {
     font-weight: bold;
     line-height: 1.7; }
   .navbar .navbar-nav a {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    display: block; }
   .navbar .navbar-nav .nav-link {
     padding: 10px;
     border-radius: 15px;
@@ -215,7 +216,8 @@ section .carousel-index .carousel-item .carousel-texto {
     border: 0;
     text-align: center;
     margin: auto;
-    height: 280px; }
+    height: 280px;
+    flex-wrap: wrap; }
     .color-white .container .ideas-index .card .icon-ideas {
       font-size: 45px;
       padding-bottom: 5px;
@@ -612,16 +614,14 @@ section .carousel-index .carousel-item .carousel-texto {
         color: #2ABFCA; }
       .row-cols-md-3 .modal .modal-dialog .modal-content .modal-body .texto-modal {
         display: grid;
-        grid-gap: 5px;
-        justify-content: center;
-        grid-template-columns: repeat(12, 50px);
-        width: 700px; }
+        grid-gap: 10px;
+        grid-template-columns: repeat(6, auto);
+        max-width: 100%; }
         .row-cols-md-3 .modal .modal-dialog .modal-content .modal-body .texto-modal .numer-grid-model {
           width: 20px;
           color: #2ABFCA;
           justify-self: end; }
         .row-cols-md-3 .modal .modal-dialog .modal-content .modal-body .texto-modal .texto-grid-model {
-          grid-column: span 3;
           font-weight: bold; }
       .row-cols-md-3 .modal .modal-dialog .modal-content .modal-body em {
         margin: auto; }
@@ -794,7 +794,8 @@ section .carousel-index .carousel-item .carousel-texto {
     cursor: pointer;
     border-radius: 150px;
     font-size: 12px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin: 5px; }
     .container-form .limpiar-formulario:hover {
       background-color: #2ABFCA;
       border: 2px solid #2ABFCA;
@@ -807,11 +808,16 @@ section .carousel-index .carousel-item .carousel-texto {
     cursor: pointer;
     border-radius: 150px;
     font-size: 12px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin: 5px; }
     .container-form .enviar-formulario:hover {
       background-color: #2ABFCA;
       border: 2px solid #2ABFCA;
       color: white; }
+  .container-form a {
+    margin: 10px;
+    display: block;
+    text-align: start; }
 
 /* FOOTER*/
 .blockquote {
@@ -889,7 +895,8 @@ section .carousel-index .carousel-item .carousel-texto {
     flex-direction: column;
     flex-wrap: wrap; }
     .container .ideas-index .card-deck .col-sm-4 {
-      max-width: 70%; }
+      max-width: 100%;
+      max-height: auto; }
   .combos .card-group .card-deck .card .overlay-index:hover .texto-combo-hover {
     margin-top: 6rem; }
   .row-habilidades {
@@ -910,7 +917,27 @@ section .carousel-index .carousel-item .carousel-texto {
     margin-bottom: .2rem;
     font-size: 1.1rem; }
   .galeria .card-body .overlay-portfolio:hover .card-text {
-    font-size: .8rem; } }
+    font-size: .8rem; }
+  .modal-cckonex .modal-body .texto-modal .number-two {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2; }
+  .modal-cckonex .modal-body .texto-modal .text-two {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3; }
+  .modal-cckonex .modal-body .texto-modal .number-three {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2; }
+  .modal-cckonex .modal-body .texto-modal .text-three {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3; } }
 
 @media (min-width: 991px) {
   .navbar-expand-lg {
@@ -919,8 +946,10 @@ section .carousel-index .carousel-item .carousel-texto {
     margin-top: 8rem; } }
 
 @media (max-width: 767px) {
-  .navbar-expand-lg {
-    justify-content: center; }
+  .bg-color {
+    position: absolute; }
+    .bg-color .navbar-expand-lg {
+      justify-content: center; }
   .ideas-index .card-deck {
     flex-direction: column; }
     .ideas-index .card-deck .col-sm-4 {
@@ -962,7 +991,7 @@ section .carousel-index .carousel-item .carousel-texto {
     .combos .card-group .card-deck .card {
       margin-bottom: 1rem; }
       .combos .card-group .card-deck .card:hover .overlay-index:hover .texto-combo-hover {
-        margin-top: 15rem; }
+        margin-top: 8rem; }
   .galeria .card-body .overlay-portfolio:hover .card-title {
     margin-top: 12rem;
     margin-bottom: .2rem; } }
