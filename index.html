@@ -44,7 +44,7 @@
 								<a class="nav-link color-violeta" href="servicios.html">Servicios</a>
 							</li>
 							<li class="nav-item">
-								<a href="#modalContacto" data-toggle="modal" class="btn nav-link color-violeta">contacto</a>
+								<a href="#contact" data-toggle="modal" class="btn nav-link color-violeta">contacto</a>
 							</li>
 						</ul>
 					</div>	
@@ -52,7 +52,7 @@
 			</div>
 		</header>
 		<!--MODAL DE CONTACTO-->
-		<div class="modal modal-contacto" id="modalContacto" tabindex="1" role="dialog">
+		<div class="modal modal-contacto" id="contact" tabindex="1" role="dialog">
 			<div class="modal-dialog modal-lg" role="document">
 				<div class="modal-content">
 					<div class="modal-header">
@@ -63,7 +63,7 @@
 					<div class="modal-body">
 						<div class="container-form animate__animated animate__bounce">
 							<h2>contacto</h2>
-							<form>
+							<form id="contactForm" name="sentMessage" novalidate="novalidate">
 								<div class="flex-form-contacto">	
 									<div class="form-group nombre-form">
 										<label for="name">Nombre</label>
@@ -81,8 +81,8 @@
 									</div>
 								</div>
 								<div class="textarea-form  form-group">
-									<label for="exampleFormControlTextarea1">Deja Tu Mensaje</label>
-									<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+									<label for="message">Deja Tu Mensaje</label>
+									<textarea class="form-control" id="message" rows="3"></textarea>
 								</div>
 								<div class="flex-form-contacto ">	
 									<button class="limpiar-formulario btn btn-outline-success" type="reset">
@@ -384,7 +384,7 @@
 								<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
 									<div class="modal-content">
 										<div class="modal-header">
-											<h5 class="modal-title">Super Liga Argentina</h5>
+											<h5 class="modal-title">SuperLiga Argentina</h5>
 												<button type="button" class="close" data-dismiss="modal">
 													<span>&times;</span>
 												</button>
@@ -448,7 +448,9 @@
 		<script src="js/jquery.slim.min.js"></script>
 		<script src="js/popper.min.js"></script>
 		<script src="js/bootstrap.js"></script>
-		<script src="js/scripts.js"></script>
 		<script src="js/wow.min.js"></script>
+		<script src="js/jqBootstrapValidation.js"></script>
+		<script src="js/contact_me.php"></script>
+		<script src="js/scripts.js"></script>
 	</body>
 </html>

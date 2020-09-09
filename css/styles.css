@@ -1,6 +1,7 @@
 @charset "UTF-8";
 :root {
-  font-size: 17px; }
+  font-size: 17px; 
+}
 
 .color-icon {
   color: #58595B;
@@ -160,9 +161,6 @@ body {
 
 .navbar .navbar-collapse {
   flex-grow: 0; }
-
-.navbar .navbar-expand-lg {
-  justify-content: center; }
 
 .navbar .dropdown-menu {
   background-color: white; }
